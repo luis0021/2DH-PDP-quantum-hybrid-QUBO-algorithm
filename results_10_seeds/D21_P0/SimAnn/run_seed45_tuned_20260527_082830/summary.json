@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-05-27T08:28:33",
+  "problem": "D21_P0",
+  "solver": "SA",
+  "seed": 45,
+  "omega2_factor": 0.14633380642745356,
+  "dynamic_omega": false,
+  "params_file": "autotune-results/medoids_improved/q4rpd_D21_P0_01/best_params.json",
+  "best_params_applied": {
+    "base_penalty_factor": 1.292552839158203,
+    "omega2_over_omega1": 0.14633380642745356,
+    "p_origin_penalty_w": 0.905541708337954,
+    "p_delivery_once_w": 7.041723981129155,
+    "p_position_once_w": 5.363086887792905,
+    "p_dest_inclusion_w": 1.3905022969253318,
+    "p_consecutiveness_w": 0.34787756611549214,
+    "p_capacity_w": 2.8323674128674665,
+    "reward_regular": 0.9755499660802411,
+    "reward_tp_depot": 2.1888185350141924,
+    "reward_depot_tp": 1.9126724140656393
+  },
+  "result": {
+    "total_route_duration": 391.02440341348847,
+    "all_deliveries_done": true,
+    "max_iterations_reached": false,
+    "n_routes": 4
+  }
+}

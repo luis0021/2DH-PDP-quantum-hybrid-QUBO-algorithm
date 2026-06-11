@@ -1,0 +1,181 @@
+========================================================================
+Q4RPD - run reproducible
+  Fecha:           2026-06-03T15:46:10
+  Instancia:       D21_P0
+  Solver:          Dirac-1
+  Semilla:         42
+  omega2_factor:   0.14633380642745356
+  dynamic_omega:   False
+  generate_graphics: True
+  params_file:     autotune-results/medoids_improved/q4rpd_D21_P0_01/best_params.json
+  [best_params aplicados]
+    base_penalty_factor: 1.292552839158203
+    omega2_over_omega1: 0.14633380642745356
+    p_origin_penalty_w: 0.905541708337954
+    p_delivery_once_w: 7.041723981129155
+    p_position_once_w: 5.363086887792905
+    p_dest_inclusion_w: 1.3905022969253318
+    p_consecutiveness_w: 0.34787756611549214
+    p_capacity_w: 2.8323674128674665
+    reward_regular: 0.9755499660802411
+    reward_tp_depot: 2.1888185350141924
+    reward_depot_tp: 1.9126724140656393
+========================================================================
+--- INICIALIZACION DEL SISTEMA ---
+
+--- ITERACION Q4RPD 1 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+  [K-medoids] Modo spatial (geografico puro)
+  [K-medoids] Convergencia en iteracion 2/15
+  [K-medoids] 3 nodos diferidos por recorte (peso=157.0)
+  [K-medoids] Redistribucion global: 1 nodo(s) reabsorbido(s) en otros clusters -> ['D9_loc']
+  [K-medoids] 2 nodo(s) sin cluster tras redistribucion (peso=107.0)
+  [K-medoids] 3 clusters sobre 21 entregas regulares pendientes (K=3)
+    Cluster 1: 5 entregas, peso=260.0, dim=212.0, nodos=['D17_loc', 'D18_loc', 'D19_loc', 'D20_loc', 'D21_loc']
+    Cluster 2: 6 entregas, peso=239.0, dim=272.0, nodos=['D11_loc', 'D12_loc', 'D13_loc', 'D14_loc', 'D15_loc', 'D9_loc']
+    Cluster 3: 8 entregas, peso=214.0, dim=225.0, nodos=['D1_loc', 'D2_loc', 'D3_loc', 'D4_loc', 'D5_loc', 'D6_loc', 'D7_loc', 'D8_loc']
+  [K-medoids] Cluster asignado a V_Own1: 8 entregas, peso=214.0/265.0 (80.8%), dim=225.0/290.0 (77.6%)
+candidate node: D1_loc
+candidate node: D7_loc
+candidate node: D3_loc
+candidate node: D8_loc
+candidate node: D4_loc
+candidate node: D6_loc
+candidate node: D5_loc
+candidate node: D2_loc
+  SRP Definido: 9 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=5050, Reads=262, w1=1.0, w2=0.14633380642745356)
+
+--- S2: SOLVER QCI DIRAC-1 ---
+2026-06-03 15:46:12 - Dirac allocation balance = 76 s
+2026-06-03 15:46:13 - Job submitted: job_id='6a20302408442f441bbabe9d'
+2026-06-03 15:46:13 - QUEUED
+2026-06-03 15:46:16 - RUNNING
+2026-06-03 15:47:23 - COMPLETED
+2026-06-03 15:47:26 - Dirac allocation balance = 72 s
+  [OK] Ruta QCI Valida: depot -> D1_loc -> D2_loc -> D3_loc -> D4_loc -> D5_loc -> D6_loc -> D8_loc -> D7_loc -> depot
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 8
+  Vehiculo V_Own1: ruta completa.
+Entregas pendientes: 13 - ['D9', 'D10', 'D11', 'D12', 'D13', '...']
+
+--- ITERACION Q4RPD 2 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own2 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+  [K-medoids] Modo spatial (geografico puro)
+  [K-medoids] Convergencia en iteracion 2/15
+  [K-medoids] 2 nodos diferidos por recorte (peso=105.0)
+  [K-medoids] 2 nodo(s) sin cluster tras redistribucion (peso=105.0)
+  [K-medoids] 2 clusters sobre 13 entregas regulares pendientes (K=2)
+    Cluster 1: 5 entregas, peso=260.0, dim=212.0, nodos=['D17_loc', 'D18_loc', 'D19_loc', 'D20_loc', 'D21_loc']
+    Cluster 2: 6 entregas, peso=241.0, dim=293.0, nodos=['D10_loc', 'D11_loc', 'D12_loc', 'D13_loc', 'D14_loc', 'D15_loc']
+  [K-medoids] Cluster asignado a V_Own2: 6 entregas, peso=241.0/260.0 (92.7%), dim=293.0/340.0 (86.2%)
+candidate node: D10_loc
+candidate node: D13_loc
+candidate node: D14_loc
+candidate node: D11_loc
+candidate node: D15_loc
+candidate node: D12_loc
+  SRP Definido: 7 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=3450, Reads=198, w1=1.0, w2=0.14633380642745356)
+
+--- S2: SOLVER QCI DIRAC-1 ---
+2026-06-03 15:47:29 - Dirac allocation balance = 72 s
+2026-06-03 15:47:29 - Job submitted: job_id='6a20307108442f441bbabe9e'
+2026-06-03 15:47:29 - QUEUED
+2026-06-03 15:47:32 - RUNNING
+2026-06-03 15:48:37 - COMPLETED
+2026-06-03 15:48:39 - Dirac allocation balance = 69 s
+  [OK] Ruta QCI Valida: depot -> D10_loc -> D11_loc -> D12_loc -> D15_loc -> D13_loc -> D14_loc -> depot
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 6
+  Vehiculo V_Own2: ruta completa.
+Entregas pendientes: 7 - ['D9', 'D16', 'D17', 'D18', 'D19', '...']
+
+--- ITERACION Q4RPD 3 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Rent1 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+  [K-medoids] Modo spatial (geografico puro)
+  [K-medoids] Convergencia en iteracion 2/15
+  [K-medoids] 2 clusters sobre 7 entregas regulares pendientes (K=2)
+    Cluster 1: 6 entregas, peso=315.0, dim=274.0, nodos=['D16_loc', 'D17_loc', 'D18_loc', 'D19_loc', 'D20_loc', 'D21_loc']
+    Cluster 2: 1 entregas, peso=50.0, dim=39.0, nodos=['D9_loc']
+  [K-medoids] Cluster asignado a V_Rent1: 6 entregas, peso=315.0/360.0 (87.5%), dim=274.0/400.0 (68.5%)
+candidate node: D18_loc
+candidate node: D17_loc
+candidate node: D16_loc
+candidate node: D19_loc
+candidate node: D20_loc
+candidate node: D21_loc
+  SRP Definido: 7 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=3450, Reads=198, w1=1.0, w2=0.14633380642745356)
+
+--- S2: SOLVER QCI DIRAC-1 ---
+2026-06-03 15:48:43 - Dirac allocation balance = 69 s
+2026-06-03 15:48:43 - Job submitted: job_id='6a2030bb08442f441bbabea0'
+2026-06-03 15:48:43 - QUEUED
+2026-06-03 15:48:46 - RUNNING
+2026-06-03 15:49:51 - COMPLETED
+2026-06-03 15:49:53 - Dirac allocation balance = 66 s
+  [OK] Ruta QCI Valida: depot -> D16_loc -> D21_loc -> D20_loc -> D17_loc -> D18_loc -> D19_loc -> depot
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 6
+  Vehiculo V_Rent1: ruta completa.
+Entregas pendientes: 1 - ['D9']
+
+--- ITERACION Q4RPD 4 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Rent2 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+  [K-medoids] Modo spatial (geografico puro)
+  [K-medoids] Convergencia en iteracion 1/15
+  [K-medoids] 1 clusters sobre 1 entregas regulares pendientes (K=1)
+    Cluster 1: 1 entregas, peso=50.0, dim=39.0, nodos=['D9_loc']
+  [K-medoids] Cluster asignado a V_Rent2: 1 entregas, peso=50.0/320.0 (15.6%), dim=39.0/380.0 (10.3%)
+candidate node: D9_loc
+  SRP Definido: 2 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=1200, Reads=108, w1=1.0, w2=0.14633380642745356)
+
+--- S2: SOLVER QCI DIRAC-1 ---
+2026-06-03 15:49:56 - Dirac allocation balance = 66 s
+2026-06-03 15:49:56 - Job submitted: job_id='6a20310408442f441bbabea3'
+2026-06-03 15:49:57 - QUEUED
+2026-06-03 15:49:59 - RUNNING
+2026-06-03 15:51:04 - COMPLETED
+2026-06-03 15:51:07 - Dirac allocation balance = 64 s
+  [OK] Ruta QCI Valida: depot -> D9_loc -> depot
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 1
+  Vehiculo V_Rent2: ruta completa.
+Entregas pendientes: 0 - []
+
+===== FIN DE LA SIMULACION Q4RPD =====
+Todas las entregas completadas!
+
+Log de Rutas Completadas:
+  Ruta 1: Vehiculo V_Own1 | ruta  depot -> D1_loc -> D2_loc -> D3_loc -> D4_loc -> D5_loc -> D6_loc -> D8_loc -> D7_loc -> depot | total duration = 141.84020566267475 | capacity used = 214/265
+  Ruta 2: Vehiculo V_Own2 | ruta  depot -> D10_loc -> D11_loc -> D12_loc -> D15_loc -> D13_loc -> D14_loc -> depot | total duration = 98.2343543003081 | capacity used = 241/260
+  Ruta 3: Vehiculo V_Rent1 | ruta  depot -> D16_loc -> D21_loc -> D20_loc -> D17_loc -> D18_loc -> D19_loc -> depot | total duration = 140.6884125191919 | capacity used = 315/360
+  Ruta 4: Vehiculo V_Rent2 | ruta  depot -> D9_loc -> depot | total duration = 22.360679774997898 | capacity used = 50/320
+
+Generando graficos...
+  [draw] Imagen guardada: results_indiv\test\D21_P0\QCI-Dirac-1\run_seed42_tuned_20260603_154610\imgs\Ruta_1.png
+  [draw] Imagen guardada: results_indiv\test\D21_P0\QCI-Dirac-1\run_seed42_tuned_20260603_154610\imgs\Ruta_2.png
+  [draw] Imagen guardada: results_indiv\test\D21_P0\QCI-Dirac-1\run_seed42_tuned_20260603_154610\imgs\Ruta_3.png
+  [draw] Imagen guardada: results_indiv\test\D21_P0\QCI-Dirac-1\run_seed42_tuned_20260603_154610\imgs\Ruta_4.png
+
+Entregas completadas: 21/21
+
+Total cost (duration/distance):  403.12365225717264

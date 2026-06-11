@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-06-04T20:45:50",
+  "problem": "D14_P1",
+  "solver": "DWave-QPU",
+  "seed": 42,
+  "omega2_factor": 0.15,
+  "dynamic_omega": false,
+  "params_file": null,
+  "best_params_applied": null,
+  "result": {
+    "total_route_duration": 230.6302497230164,
+    "all_deliveries_done": true,
+    "max_iterations_reached": false,
+    "n_routes": 2
+  }
+}

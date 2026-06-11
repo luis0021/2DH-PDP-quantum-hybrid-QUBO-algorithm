@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-06-04T23:11:56",
+  "problem": "D21_P0",
+  "solver": "DWave-Hybrid",
+  "seed": 43,
+  "omega2_factor": 0.14068729513430306,
+  "dynamic_omega": false,
+  "params_file": "autotune-results/individual_studies_first/q4rpd_D21_P0_00/best_params.json",
+  "best_params_applied": {
+    "base_penalty_factor": 1.4936624228333792,
+    "omega2_over_omega1": 0.14068729513430306,
+    "p_origin_penalty_w": 1.2374093928731162,
+    "p_delivery_once_w": 4.960139519546661,
+    "p_position_once_w": 5.691326427015879,
+    "p_dest_inclusion_w": 2.098886354728502,
+    "p_consecutiveness_w": 0.2705933957790522,
+    "p_capacity_w": 1.844557933391329,
+    "reward_regular": 0.846287846409157,
+    "reward_tp_depot": 1.9196500101443807,
+    "reward_depot_tp": 2.821011144207876
+  },
+  "result": {
+    "total_route_duration": 386.75373038531853,
+    "all_deliveries_done": true,
+    "max_iterations_reached": false,
+    "n_routes": 4
+  }
+}

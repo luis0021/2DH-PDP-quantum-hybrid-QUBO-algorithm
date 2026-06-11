@@ -1,0 +1,126 @@
+
+###################################################################################
+Executing problem:  D14_P1
+Problem data:
+
+dynamic_omega: False
+omega1: 1.0
+omega2: 0.15
+p_origin_penalty_w: 1.0
+p_delivery_once_w: 4.0
+p_position_once_w: 4.0
+p_dest_inclusion_w: 0.5
+p_consecutiveness_w: 0.5
+p_capacity_w: 1.0
+QCIUse: True
+SolverType: Dirac-1
+--- INICIALIZACIÓN DEL SISTEMA ---
+
+--- ITERACIÓN Q4RPD 1 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+candidate node: D6_loc
+candidate node: D9_loc
+candidate node: D3_loc
+candidate node: D5_loc
+candidate node: D8_loc
+candidate node: D4_loc
+  SRP Definido: 8 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.15)
+
+--- S2: SOLVER QCI DIRAC-1 ---
+Rewards:
+base_reward: 0.11249999999999999
+2026-04-14 08:36:44 - Dirac allocation balance = 315 s
+2026-04-14 08:36:44 - Job submitted: job_id='69dde07c08442f441bb9538d'
+2026-04-14 08:36:45 - QUEUED
+2026-04-14 08:36:47 - RUNNING
+2026-04-14 08:37:52 - COMPLETED
+2026-04-14 08:37:55 - Dirac allocation balance = 312 s
+  [OK] Ruta QCI Válida: depot -> D9_loc -> D3_loc -> D6_loc -> D8_loc -> TP1_loc
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 5
+Entregas pendientes: 9 - ['D2', 'D4', 'D5', 'D7', 'D10', '...']
+
+--- ITERACIÓN Q4RPD 2 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Own1 en 'TP1_loc'
+  Tipo SRP: TP-Depot -> Destino: Depot
+candidate node: D5_loc
+candidate node: D4_loc
+candidate node: D10_loc
+candidate node: D2_loc
+candidate node: D14_loc
+candidate node: D7_loc
+candidate node: D12_loc
+candidate node: D11_loc
+  SRP Definido: 10 nodos, Max Dur: 431.3
+  Intento 1/1 (Sweeps=6000, Reads=300, w1=1.0, w2=0.15)
+
+--- S2: SOLVER QCI DIRAC-1 ---
+Rewards:
+base_reward: 0.15
+2026-04-14 08:37:59 - Dirac allocation balance = 312 s
+2026-04-14 08:37:59 - Job submitted: job_id='69dde0c708442f441bb95397'
+2026-04-14 08:37:59 - QUEUED
+2026-04-14 08:38:02 - RUNNING
+2026-04-14 08:39:09 - COMPLETED
+2026-04-14 08:39:12 - Dirac allocation balance = 308 s
+  [OK] Ruta QCI Válida: TP1_loc -> D5_loc -> D4_loc -> depot
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 2
+  Vehículo V_Own1 completó ruta.
+Entregas pendientes: 7 - ['D2', 'D7', 'D10', 'D11', 'D12', '...']
+
+--- ITERACIÓN Q4RPD 3 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Own2 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+candidate node: D10_loc
+candidate node: D2_loc
+candidate node: D14_loc
+candidate node: D7_loc
+candidate node: D11_loc
+candidate node: D12_loc
+candidate node: D13_loc
+  SRP Definido: 8 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.15)
+
+--- S2: SOLVER QCI DIRAC-1 ---
+Rewards:
+base_reward: 1.153846153846154
+2026-04-14 08:39:15 - Dirac allocation balance = 308 s
+2026-04-14 08:39:15 - Job submitted: job_id='69dde11308442f441bb953a2'
+2026-04-14 08:39:16 - QUEUED
+2026-04-14 08:39:18 - RUNNING
+2026-04-14 08:40:23 - COMPLETED
+2026-04-14 08:40:26 - Dirac allocation balance = 305 s
+  [OK] Ruta QCI Válida: depot -> D2_loc -> D7_loc -> D11_loc -> D10_loc -> D14_loc -> D13_loc -> D12_loc -> depot
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 7
+  Vehículo V_Own2 completó ruta.
+Entregas pendientes: 0 - []
+
+===== FIN DE LA SIMULACIÓN Q4RPD =====
+¡Todas las entregas completadas!
+
+Log de Rutas Completadas:
+  Ruta 1: Vehículo V_Own1 | ruta  depot -> D9_loc -> D3_loc -> D6_loc -> D8_loc -> TP1_loc | TP1_loc -> D5_loc -> D4_loc -> depot | total duration = 99.92537211338184
+  Ruta 2: Vehículo V_Own2 | ruta  depot -> D2_loc -> D7_loc -> D11_loc -> D10_loc -> D14_loc -> D13_loc -> D12_loc -> depot | total duration = 131.28337174831827
+
+Generando gráficos...
+
+<Figure size 640x480 with 1 Axes>
+<Figure size 640x480 with 1 Axes>
+
+Total cost (duration/distance):  231.2087438617001
+Finished executing problem:  D14_P1
+###################################################################################
+

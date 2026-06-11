@@ -1,0 +1,143 @@
+
+###################################################################################
+Executing problem:  D29_P0
+Problem data:
+
+dynamic_omega: False
+omega1: 1.0
+omega2: 0.15
+p_origin_penalty_w: 1.0
+p_delivery_once_w: 4.0
+p_position_once_w: 4.0
+p_dest_inclusion_w: 0.5
+p_consecutiveness_w: 0.5
+p_capacity_w: 4.0
+QCIUse: False
+num_reads_dwave: None
+num_sweeps_dwave: None
+--- INICIALIZACIÓN DEL SISTEMA ---
+
+--- ITERACIÓN Q4RPD 1 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Rent1 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+candidate node: D24_loc
+candidate node: D3_loc
+candidate node: D26_loc
+candidate node: D25_loc
+candidate node: D27_loc
+candidate node: D4_loc
+candidate node: D2_loc
+candidate node: D1_loc
+candidate node: D19_loc
+  SRP Definido: 10 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=6000, Reads=300, w1=1.0, w2=0.15)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+Rewards:
+base_reward: 0.5
+  [OK] Ruta Válida: depot -> D2_loc -> D1_loc -> D4_loc -> D26_loc -> D27_loc -> D3_loc -> D24_loc -> D25_loc -> depot (T=152.3)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 8
+  Vehículo V_Rent1 completó ruta.
+Entregas pendientes: 21 - ['D5', 'D6', 'D7', 'D8', 'D9', '...']
+
+--- ITERACIÓN Q4RPD 2 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Rent2 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+candidate node: D29_loc
+candidate node: D7_loc
+candidate node: D6_loc
+candidate node: D8_loc
+candidate node: D28_loc
+candidate node: D5_loc
+candidate node: D12_loc
+candidate node: D14_loc
+candidate node: D23_loc
+  SRP Definido: 10 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=6000, Reads=300, w1=1.0, w2=0.15)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+Rewards:
+base_reward: 0.5
+  [OK] Ruta Válida: depot -> D12_loc -> D5_loc -> D28_loc -> D6_loc -> D29_loc -> D7_loc -> D8_loc -> D14_loc -> D23_loc -> depot (T=178.5)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 9
+  Vehículo V_Rent2 completó ruta.
+Entregas pendientes: 12 - ['D9', 'D10', 'D11', 'D13', 'D15', '...']
+
+--- ITERACIÓN Q4RPD 3 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Rent3 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+candidate node: D21_loc
+candidate node: D22_loc
+candidate node: D20_loc
+candidate node: D17_loc
+candidate node: D18_loc
+candidate node: D16_loc
+candidate node: D19_loc
+  SRP Definido: 8 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.15)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+Rewards:
+base_reward: 0.576923076923077
+  [OK] Ruta Válida: depot -> D18_loc -> D22_loc -> D21_loc -> D20_loc -> D17_loc -> D16_loc -> depot (T=123.1)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 6
+  Vehículo V_Rent3 completó ruta.
+Entregas pendientes: 6 - ['D9', 'D10', 'D11', 'D13', 'D15', '...']
+
+--- ITERACIÓN Q4RPD 4 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Rent4 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+candidate node: D9_loc
+candidate node: D19_loc
+candidate node: D11_loc
+candidate node: D15_loc
+candidate node: D10_loc
+candidate node: D13_loc
+  SRP Definido: 7 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=3450, Reads=198, w1=1.0, w2=0.15)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+Rewards:
+base_reward: 0.625
+  [OK] Ruta Válida: depot -> D9_loc -> D11_loc -> D13_loc -> D15_loc -> D10_loc -> depot (T=121.8)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 5
+  Vehículo V_Rent4 completó ruta.
+Todos los vehículos disponibles han completado una ruta, pero aún hay entregas pendientes.
+Delivery(id=D19, loc='D19_loc', tp=False, deadline=350)
+
+===== FIN DE LA SIMULACIÓN Q4RPD =====
+Simulación terminada por otra condición.
+
+Log de Rutas Completadas:
+  Ruta 1: Vehículo V_Rent1 | ruta  depot -> D2_loc -> D1_loc -> D4_loc -> D26_loc -> D27_loc -> D3_loc -> D24_loc -> D25_loc -> depot | total duration = 152.3367360743182 | capacity used = 279/290
+  Ruta 2: Vehículo V_Rent2 | ruta  depot -> D12_loc -> D5_loc -> D28_loc -> D6_loc -> D29_loc -> D7_loc -> D8_loc -> D14_loc -> D23_loc -> depot | total duration = 178.5110351075789 | capacity used = 277/290
+  Ruta 3: Vehículo V_Rent3 | ruta  depot -> D18_loc -> D22_loc -> D21_loc -> D20_loc -> D17_loc -> D16_loc -> depot | total duration = 123.09872640656548 | capacity used = 284/290
+  Ruta 4: Vehículo V_Rent4 | ruta  depot -> D9_loc -> D11_loc -> D13_loc -> D15_loc -> D10_loc -> depot | total duration = 121.76240570324862 | capacity used = 199/290
+
+Generando gráficos...
+
+<Figure size 640x480 with 1 Axes>
+<Figure size 640x480 with 1 Axes>
+<Figure size 640x480 with 1 Axes>
+<Figure size 640x480 with 1 Axes>
+
+Total cost (duration/distance):  575.7089032917112
+Finished executing problem:  D29_P0
+###################################################################################
+

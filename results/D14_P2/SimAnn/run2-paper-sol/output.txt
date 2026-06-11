@@ -1,0 +1,180 @@
+
+###################################################################################
+Executing problem:  D14_P2
+Problem data:
+
+dynamic_omega: False
+omega1: 1.0
+omega2: 0.2
+p_origin_penalty_w: 1.0
+p_delivery_once_w: 4.0
+p_position_once_w: 4.0
+p_dest_inclusion_w: 0.5
+p_consecutiveness_w: 0.5
+p_capacity_w: 1.0
+QCIUse: False
+num_reads_dwave: None
+num_sweeps_dwave: None
+--- INICIALIZACIÓN DEL SISTEMA ---
+
+--- ITERACIÓN Q4RPD 1 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+  SRP Definido: 8 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.2)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+Rewards:
+base_reward: 0.225
+  [X] Ruta INVÁLIDA: depot -> D9_loc -> D3_loc -> D8_loc -> D6_loc -> D5_loc -> TP1_loc - ['Tiempo excedido: 57.9 > 50.0']
+    -> Fallo. Reintentando con parámetros ajustados...
+Entregas pendientes: 14 - ['TP1', 'TP2', 'D3', 'D4', 'D5', '...']
+
+--- ITERACIÓN Q4RPD 2 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+  SRP Definido: 8 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.2)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+Rewards:
+base_reward: 0.225
+  [OK] Ruta Válida: depot -> D9_loc -> D3_loc -> D8_loc -> D6_loc -> TP1_loc (T=46.5)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 5
+Entregas pendientes: 9 - ['TP2', 'D4', 'D5', 'D7', 'D10', '...']
+
+--- ITERACIÓN Q4RPD 3 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Own1 en 'TP1_loc'
+  Tipo SRP: TP-Depot -> Destino: Depot
+  SRP Definido: 11 nodos, Max Dur: 433.5
+  Intento 1/1 (Sweeps=7050, Reads=342, w1=1.0, w2=0.2)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+Rewards:
+base_reward: 0.35000000000000003
+  [OK] Ruta Válida: TP1_loc -> D5_loc -> D4_loc -> D14_loc -> depot (T=80.6)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 3
+  Vehículo V_Own1 completó ruta.
+Entregas pendientes: 6 - ['TP2', 'D7', 'D10', 'D11', 'D12', '...']
+
+--- ITERACIÓN Q4RPD 4 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Own2 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP2
+  SRP Definido: 7 nodos, Max Dur: 70.0
+  Intento 1/1 (Sweeps=3450, Reads=198, w1=1.0, w2=0.2)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+Rewards:
+base_reward: 0.225
+  [X] Ruta INVÁLIDA: depot -> D13_loc -> D11_loc -> D7_loc -> D10_loc -> D12_loc -> TP2_loc - ['Tiempo excedido: 82.8 > 70.0']
+    -> Fallo. Reintentando con parámetros ajustados...
+Entregas pendientes: 6 - ['TP2', 'D7', 'D10', 'D11', 'D12', '...']
+
+--- ITERACIÓN Q4RPD 5 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Own2 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP2
+  SRP Definido: 7 nodos, Max Dur: 70.0
+  Intento 1/1 (Sweeps=3450, Reads=198, w1=1.0, w2=0.2)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+Rewards:
+base_reward: 0.225
+  [X] Ruta INVÁLIDA: depot -> D13_loc -> D11_loc -> D7_loc -> D10_loc -> D12_loc -> TP2_loc - ['Tiempo excedido: 82.8 > 70.0']
+    -> Fallo. Reintentando con parámetros ajustados...
+Entregas pendientes: 6 - ['TP2', 'D7', 'D10', 'D11', 'D12', '...']
+
+--- ITERACIÓN Q4RPD 6 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Own2 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP2
+  SRP Definido: 7 nodos, Max Dur: 70.0
+  Intento 1/1 (Sweeps=3450, Reads=198, w1=1.0, w2=0.2)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+Rewards:
+base_reward: 0.225
+  [X] Ruta INVÁLIDA: depot -> D13_loc -> D11_loc -> D7_loc -> D10_loc -> D12_loc -> TP2_loc - ['Tiempo excedido: 82.8 > 70.0']
+    -> Fallo. Reintentando con parámetros ajustados...
+Entregas pendientes: 6 - ['TP2', 'D7', 'D10', 'D11', 'D12', '...']
+
+--- ITERACIÓN Q4RPD 7 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Own2 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP2
+  SRP Definido: 7 nodos, Max Dur: 70.0
+  Intento 1/1 (Sweeps=3450, Reads=198, w1=1.0, w2=0.2)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+Rewards:
+base_reward: 0.225
+  [X] Ruta INVÁLIDA: depot -> D13_loc -> D11_loc -> D7_loc -> D10_loc -> D12_loc -> TP2_loc - ['Tiempo excedido: 82.8 > 70.0']
+    -> Fallo. Reintentando con parámetros ajustados...
+Entregas pendientes: 6 - ['TP2', 'D7', 'D10', 'D11', 'D12', '...']
+
+--- ITERACIÓN Q4RPD 8 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Own2 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP2
+  SRP Definido: 7 nodos, Max Dur: 70.0
+  Intento 1/1 (Sweeps=3450, Reads=198, w1=1.0, w2=0.2)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+Rewards:
+base_reward: 0.225
+  [OK] Ruta Válida: depot -> D10_loc -> D7_loc -> D13_loc -> D11_loc -> TP2_loc (T=68.3)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 5
+Entregas pendientes: 1 - ['D12']
+
+--- ITERACIÓN Q4RPD 9 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Own2 en 'TP2_loc'
+  Tipo SRP: TP-Depot -> Destino: Depot
+  SRP Definido: 3 nodos, Max Dur: 411.7
+  Intento 1/1 (Sweeps=1450, Reads=118, w1=1.0, w2=0.2)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+Rewards:
+base_reward: 0.35000000000000003
+  [OK] Ruta Válida: TP2_loc -> D12_loc -> depot (T=50.0)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 1
+  Vehículo V_Own2 completó ruta.
+Entregas pendientes: 0 - []
+
+===== FIN DE LA SIMULACIÓN Q4RPD =====
+¡Todas las entregas completadas!
+
+Log de Rutas Completadas:
+  Ruta 1: Vehículo V_Own1 | ruta  depot -> D9_loc -> D3_loc -> D8_loc -> D6_loc -> TP1_loc | TP1_loc -> D5_loc -> D4_loc -> D14_loc -> depot | total duration = 127.0028321871581
+  Ruta 2: Vehículo V_Own2 | ruta  depot -> D10_loc -> D7_loc -> D13_loc -> D11_loc -> TP2_loc | TP2_loc -> D12_loc -> depot | total duration = 118.30148077112443
+
+Generando gráficos...
+
+<Figure size 640x480 with 1 Axes>
+<Figure size 640x480 with 1 Axes>
+
+Total cost (duration/distance):  245.30431295828254
+Finished executing problem:  D14_P2
+###################################################################################
+

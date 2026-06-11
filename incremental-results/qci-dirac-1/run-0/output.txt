@@ -1,0 +1,127 @@
+Starting Incremental Analysis for D10_P0...
+Range: 4 to 10 deliveries (step=1)
+Size  | Solver Time (s) | Total Cost | Status
+
+--- ITERACIÓN Q4RPD 0 (Rolling Horizon) ---
+
+--- S2: SOLVER QCI DIRAC-1 (QUBO) ---
+  [QCI Tuning] Omega1=1.0 | P_NoRepeat=4.0
+  Enviando a Dirac-1 (Job)...
+2026-03-11 07:37:15 - Dirac allocation balance = 361 s
+2026-03-11 07:37:15 - Job submitted: job_id='69b10d9b08442f441bb86faf'
+2026-03-11 07:37:15 - QUEUED
+2026-03-11 07:37:18 - RUNNING
+2026-03-11 07:37:54 - COMPLETED
+2026-03-11 07:37:56 - Dirac allocation balance = 360 s
+  [OK] Ruta QCI Válida (Muestra 0): depot -> D2_loc -> D4_loc -> D3_loc -> D1_loc -> depot (T=112.6)
+
+Log de Rutas Completadas:
+  Ruta 1: Vehículo V_Own1 | ruta  depot -> D2_loc -> D4_loc -> D3_loc -> D1_loc -> depot | total duration = 112.63501226235819
+4     | 1.0000          | 37.8240         | 112.64     | Solved
+
+--- ITERACIÓN Q4RPD 0 (Rolling Horizon) ---
+
+--- S2: SOLVER QCI DIRAC-1 (QUBO) ---
+  [QCI Tuning] Omega1=1.0 | P_NoRepeat=4.0
+  Enviando a Dirac-1 (Job)...
+2026-03-11 07:38:00 - Dirac allocation balance = 360 s
+2026-03-11 07:38:00 - Job submitted: job_id='69b10dc708442f441bb86fb0'
+2026-03-11 07:38:00 - QUEUED
+2026-03-11 07:38:03 - RUNNING
+2026-03-11 07:38:40 - COMPLETED
+2026-03-11 07:38:43 - Dirac allocation balance = 358 s
+  [OK] Ruta QCI Válida (Muestra 0): depot -> D2_loc -> D4_loc -> D3_loc -> D5_loc -> D1_loc -> depot (T=122.7)
+
+Log de Rutas Completadas:
+  Ruta 1: Vehículo V_Own1 | ruta  depot -> D2_loc -> D4_loc -> D3_loc -> D5_loc -> D1_loc -> depot | total duration = 122.71840379724964
+5     | 2.0000          | 37.8480         | 122.72     | Solved
+
+--- ITERACIÓN Q4RPD 0 (Rolling Horizon) ---
+
+--- S2: SOLVER QCI DIRAC-1 (QUBO) ---
+  [QCI Tuning] Omega1=1.0 | P_NoRepeat=4.0
+  Enviando a Dirac-1 (Job)...
+2026-03-11 07:38:47 - Dirac allocation balance = 358 s
+2026-03-11 07:38:47 - Job submitted: job_id='69b10df608442f441bb86fb1'
+2026-03-11 07:38:47 - QUEUED
+2026-03-11 07:38:50 - RUNNING
+2026-03-11 07:39:27 - COMPLETED
+2026-03-11 07:39:30 - Dirac allocation balance = 356 s
+  [OK] Ruta QCI Válida (Muestra 0): depot -> D2_loc -> D4_loc -> D3_loc -> D6_loc -> D5_loc -> D1_loc -> depot (T=124.9)
+
+Log de Rutas Completadas:
+  Ruta 1: Vehículo V_Own1 | ruta  depot -> D2_loc -> D4_loc -> D3_loc -> D6_loc -> D5_loc -> D1_loc -> depot | total duration = 124.88821755609837
+6     | 2.0000          | 38.0090         | 124.89     | Solved
+
+--- ITERACIÓN Q4RPD 0 (Rolling Horizon) ---
+
+--- S2: SOLVER QCI DIRAC-1 (QUBO) ---
+  [QCI Tuning] Omega1=1.0 | P_NoRepeat=4.0
+  Enviando a Dirac-1 (Job)...
+2026-03-11 07:39:34 - Dirac allocation balance = 356 s
+2026-03-11 07:39:34 - Job submitted: job_id='69b10e2508442f441bb86fb2'
+2026-03-11 07:39:34 - QUEUED
+2026-03-11 07:39:37 - RUNNING
+2026-03-11 07:40:14 - COMPLETED
+2026-03-11 07:40:17 - Dirac allocation balance = 354 s
+  [OK] Ruta QCI Válida (Muestra 0): depot -> D3_loc -> D1_loc -> D6_loc -> D5_loc -> D4_loc -> D2_loc -> D7_loc -> depot (T=140.0)
+
+Log de Rutas Completadas:
+  Ruta 1: Vehículo V_Own1 | ruta  depot -> D3_loc -> D1_loc -> D6_loc -> D5_loc -> D4_loc -> D2_loc -> D7_loc -> depot | total duration = 140.01440595415693
+7     | 2.0000          | 38.6080         | 140.01     | Solved
+
+--- ITERACIÓN Q4RPD 0 (Rolling Horizon) ---
+
+--- S2: SOLVER QCI DIRAC-1 (QUBO) ---
+  [QCI Tuning] Omega1=1.0 | P_NoRepeat=4.0
+  Enviando a Dirac-1 (Job)...
+2026-03-11 07:40:21 - Dirac allocation balance = 354 s
+2026-03-11 07:40:21 - Job submitted: job_id='69b10e5408442f441bb86fb3'
+2026-03-11 07:40:21 - QUEUED
+2026-03-11 07:40:24 - RUNNING
+2026-03-11 07:41:02 - COMPLETED
+2026-03-11 07:41:04 - Dirac allocation balance = 352 s
+  [OK] Ruta QCI Válida (Muestra 0): depot -> D6_loc -> D1_loc -> D5_loc -> D3_loc -> D8_loc -> D4_loc -> D7_loc -> D2_loc -> depot (T=146.9)
+
+Log de Rutas Completadas:
+  Ruta 1: Vehículo V_Own1 | ruta  depot -> D6_loc -> D1_loc -> D5_loc -> D3_loc -> D8_loc -> D4_loc -> D7_loc -> D2_loc -> depot | total duration = 146.87245704767412
+8     | 2.0000          | 38.6470         | 146.87     | Solved
+
+--- ITERACIÓN Q4RPD 0 (Rolling Horizon) ---
+
+--- S2: SOLVER QCI DIRAC-1 (QUBO) ---
+  [QCI Tuning] Omega1=1.0 | P_NoRepeat=4.0
+  Enviando a Dirac-1 (Job)...
+2026-03-11 07:41:08 - Dirac allocation balance = 352 s
+2026-03-11 07:41:08 - Job submitted: job_id='69b10e8408442f441bb86fb4'
+2026-03-11 07:41:08 - QUEUED
+2026-03-11 07:41:11 - RUNNING
+2026-03-11 07:41:49 - COMPLETED
+2026-03-11 07:41:52 - Dirac allocation balance = 349 s
+  [OK] Ruta QCI Válida (Muestra 0): depot -> D2_loc -> D7_loc -> D4_loc -> D3_loc -> D9_loc -> D5_loc -> D6_loc -> D8_loc -> D1_loc -> depot (T=156.1)
+
+Log de Rutas Completadas:
+  Ruta 1: Vehículo V_Own1 | ruta  depot -> D2_loc -> D7_loc -> D4_loc -> D3_loc -> D9_loc -> D5_loc -> D6_loc -> D8_loc -> D1_loc -> depot | total duration = 156.13387370395486
+9     | 3.0000          | 38.9030         | 156.13     | Solved
+
+--- ITERACIÓN Q4RPD 0 (Rolling Horizon) ---
+
+--- S2: SOLVER QCI DIRAC-1 (QUBO) ---
+  [QCI Tuning] Omega1=1.0 | P_NoRepeat=4.0
+  Enviando a Dirac-1 (Job)...
+2026-03-11 07:41:56 - Dirac allocation balance = 349 s
+2026-03-11 07:41:56 - Job submitted: job_id='69b10eb408442f441bb86fb5'
+2026-03-11 07:41:56 - QUEUED
+2026-03-11 07:41:59 - RUNNING
+2026-03-11 07:42:39 - COMPLETED
+2026-03-11 07:42:42 - Dirac allocation balance = 346 s
+  [OK] Ruta QCI Válida (Muestra 0): depot -> D9_loc -> D8_loc -> D6_loc -> D1_loc -> D3_loc -> D5_loc -> D2_loc -> D7_loc -> D10_loc -> D4_loc -> depot (T=164.7)
+
+Log de Rutas Completadas:
+  Ruta 1: Vehículo V_Own1 | ruta  depot -> D9_loc -> D8_loc -> D6_loc -> D1_loc -> D3_loc -> D5_loc -> D2_loc -> D7_loc -> D10_loc -> D4_loc -> depot | total duration = 164.71628695744894
+10    | 3.0000          | 40.5100         | 164.72     | Solved
+
+Results saved to incremental_results_D10_P0.csv
+C:\Users\user\OneDrive\Escritorio\TFM\Q4RPD\Q4RPDProblem\30-Q4RPD-QUBO-tuning\TunedCode\D6_P0\scalability_incremental.py:157: UserWarning: tight_layout not applied: number of rows in subplot specifications must be multiples of one another.
+  plt.tight_layout()
+Plot saved to incremental_plot_D10_P0.png

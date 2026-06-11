@@ -1,0 +1,113 @@
+
+###################################################################################
+Executing problem:  D14_P1
+Problem data:
+
+dynamic_omega: False
+omega1: 1.0
+omega2: 0.15
+p_origin_penalty_w: 1.0
+p_delivery_once_w: 4.0
+p_position_once_w: 4.0
+p_dest_inclusion_w: 0.5
+p_consecutiveness_w: 0.5
+p_capacity_w: 2.0
+QCIUse: False
+num_reads_dwave: None
+num_sweeps_dwave: None
+--- INICIALIZACIÓN DEL SISTEMA ---
+
+--- ITERACIÓN Q4RPD 1 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+candidate node: D6_loc
+candidate node: D9_loc
+candidate node: D3_loc
+candidate node: D5_loc
+candidate node: D8_loc
+candidate node: D4_loc
+  SRP Definido: 8 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.15)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+base_penalty: 4.0
+Rewards:
+base_reward: 0.11249999999999999
+  [OK] Ruta Válida: depot -> D9_loc -> D3_loc -> D6_loc -> TP1_loc (T=36.9)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 4
+Entregas pendientes: 10 - ['D2', 'D4', 'D5', 'D7', 'D8', '...']
+
+--- ITERACIÓN Q4RPD 2 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Own1 en 'TP1_loc'
+  Tipo SRP: TP-Depot -> Destino: Depot
+candidate node: D5_loc
+candidate node: D8_loc
+candidate node: D4_loc
+candidate node: D10_loc
+candidate node: D2_loc
+candidate node: D14_loc
+candidate node: D7_loc
+candidate node: D12_loc
+candidate node: D11_loc
+  SRP Definido: 11 nodos, Max Dur: 443.1
+  Intento 1/1 (Sweeps=7050, Reads=342, w1=1.0, w2=0.15)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+base_penalty: 4.0
+Rewards:
+base_reward: 0.15
+  [OK] Ruta Válida: TP1_loc -> D5_loc -> D8_loc -> D4_loc -> depot (T=62.5)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 3
+  Vehículo V_Own1 completó ruta.
+Entregas pendientes: 7 - ['D2', 'D7', 'D10', 'D11', 'D12', '...']
+
+--- ITERACIÓN Q4RPD 3 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Own2 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+candidate node: D10_loc
+candidate node: D2_loc
+candidate node: D14_loc
+candidate node: D7_loc
+candidate node: D11_loc
+candidate node: D12_loc
+candidate node: D13_loc
+  SRP Definido: 8 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.15)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+base_penalty: 4.0
+Rewards:
+base_reward: 0.7692307692307693
+  [OK] Ruta Válida: depot -> D2_loc -> D11_loc -> D7_loc -> D10_loc -> D14_loc -> D12_loc -> D13_loc -> depot (T=124.5)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 7
+  Vehículo V_Own2 completó ruta.
+Entregas pendientes: 0 - []
+
+===== FIN DE LA SIMULACIÓN Q4RPD =====
+¡Todas las entregas completadas!
+
+Log de Rutas Completadas:
+  Ruta 1: Vehículo V_Own1 | ruta  depot -> D9_loc -> D3_loc -> D6_loc -> TP1_loc | TP1_loc -> D5_loc -> D8_loc -> D4_loc -> depot | total duration = 99.36612171072134 | capacity used = 252/285
+  Ruta 2: Vehículo V_Own2 | ruta  depot -> D2_loc -> D11_loc -> D7_loc -> D10_loc -> D14_loc -> D12_loc -> D13_loc -> depot | total duration = 124.51742620963662 | capacity used = 275/280
+
+Generando gráficos...
+
+<Figure size 640x480 with 1 Axes>
+<Figure size 640x480 with 1 Axes>
+
+Total cost (duration/distance):  223.88354792035796
+Finished executing problem:  D14_P1
+###################################################################################
+

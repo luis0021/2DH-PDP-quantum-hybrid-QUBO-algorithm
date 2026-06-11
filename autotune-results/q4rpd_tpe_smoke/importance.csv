@@ -1,0 +1,12 @@
+param,importance
+base_penalty_factor,0.19648136609604885
+p_delivery_once_w,0.1939325540177923
+reward_regular,0.18685302163183895
+p_consecutiveness_w,0.10882630814527693
+omega2_over_omega1,0.08906539563720167
+reward_depot_tp,0.07683150142717553
+reward_tp_depot,0.0522257155457939
+p_position_once_w,0.043704577275108736
+p_origin_penalty_w,0.021704440975605515
+p_capacity_w,0.021124018505132083
+p_dest_inclusion_w,0.009251100743025513

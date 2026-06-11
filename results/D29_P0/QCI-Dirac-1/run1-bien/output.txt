@@ -1,0 +1,167 @@
+
+###################################################################################
+Executing problem:  D29_P0
+Problem data:
+
+dynamic_omega: False
+omega1: 1.0
+omega2: 0.15
+p_origin_penalty_w: 1.0
+p_delivery_once_w: 4.0
+p_position_once_w: 4.0
+p_dest_inclusion_w: 0.5
+p_consecutiveness_w: 0.5
+p_capacity_w: 2.0
+QCIUse: True
+SolverType: Dirac-1
+--- INICIALIZACIÓN DEL SISTEMA ---
+
+--- ITERACIÓN Q4RPD 1 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Rent1 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+candidate node: D24_loc
+candidate node: D3_loc
+candidate node: D26_loc
+candidate node: D25_loc
+candidate node: D27_loc
+candidate node: D4_loc
+candidate node: D2_loc
+candidate node: D1_loc
+  SRP Definido: 9 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=5050, Reads=262, w1=1.0, w2=0.15)
+
+--- S2: SOLVER QCI DIRAC-1 ---
+base_penalty: 4.0
+Rewards:
+base_reward: 0.7142857142857143
+2026-04-28 18:55:28 - Dirac allocation balance = 150 s
+2026-04-28 18:55:28 - Job submitted: job_id='69f0e68008442f441bba15f3'
+2026-04-28 18:55:28 - QUEUED
+2026-04-28 18:55:31 - RUNNING
+2026-04-28 18:56:36 - COMPLETED
+2026-04-28 18:56:38 - Dirac allocation balance = 146 s
+  [OK] Ruta QCI Válida: depot -> D2_loc -> D1_loc -> D27_loc -> D3_loc -> D25_loc -> D24_loc -> D26_loc -> D4_loc -> depot
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 8
+  Vehículo V_Rent1 completó ruta.
+Entregas pendientes: 21 - ['D5', 'D6', 'D7', 'D8', 'D9', '...']
+
+--- ITERACIÓN Q4RPD 2 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Rent2 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+candidate node: D29_loc
+candidate node: D7_loc
+candidate node: D6_loc
+candidate node: D8_loc
+candidate node: D28_loc
+candidate node: D5_loc
+candidate node: D12_loc
+candidate node: D14_loc
+candidate node: D23_loc
+  SRP Definido: 10 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=6000, Reads=300, w1=1.0, w2=0.15)
+
+--- S2: SOLVER QCI DIRAC-1 ---
+base_penalty: 4.0
+Rewards:
+base_reward: 0.6666666666666666
+2026-04-28 18:56:42 - Dirac allocation balance = 146 s
+2026-04-28 18:56:43 - Job submitted: job_id='69f0e6ca08442f441bba15fe'
+2026-04-28 18:56:43 - QUEUED
+2026-04-28 18:56:45 - RUNNING
+2026-04-28 18:57:53 - COMPLETED
+2026-04-28 18:57:56 - Dirac allocation balance = 142 s
+  [OK] Ruta QCI Válida: depot -> D5_loc -> D12_loc -> D23_loc -> D14_loc -> D8_loc -> D29_loc -> D6_loc -> D28_loc -> D7_loc -> depot
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 9
+  Vehículo V_Rent2 completó ruta.
+Entregas pendientes: 12 - ['D9', 'D10', 'D11', 'D13', 'D15', '...']
+
+--- ITERACIÓN Q4RPD 3 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Rent3 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+candidate node: D21_loc
+candidate node: D22_loc
+candidate node: D20_loc
+candidate node: D17_loc
+candidate node: D18_loc
+candidate node: D16_loc
+  SRP Definido: 7 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=3450, Reads=198, w1=1.0, w2=0.15)
+
+--- S2: SOLVER QCI DIRAC-1 ---
+base_penalty: 4.0
+Rewards:
+base_reward: 0.8333333333333334
+2026-04-28 18:58:00 - Dirac allocation balance = 142 s
+2026-04-28 18:58:00 - Job submitted: job_id='69f0e71808442f441bba1610'
+2026-04-28 18:58:00 - QUEUED
+2026-04-28 18:58:03 - RUNNING
+2026-04-28 18:59:08 - COMPLETED
+2026-04-28 18:59:11 - Dirac allocation balance = 139 s
+  [OK] Ruta QCI Válida: depot -> D16_loc -> D17_loc -> D18_loc -> D22_loc -> D21_loc -> D20_loc -> depot
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 6
+  Vehículo V_Rent3 completó ruta.
+Entregas pendientes: 6 - ['D9', 'D10', 'D11', 'D13', 'D15', '...']
+
+--- ITERACIÓN Q4RPD 4 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Rent4 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+candidate node: D9_loc
+candidate node: D19_loc
+candidate node: D11_loc
+candidate node: D15_loc
+candidate node: D10_loc
+candidate node: D13_loc
+  SRP Definido: 7 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=3450, Reads=198, w1=1.0, w2=0.15)
+
+--- S2: SOLVER QCI DIRAC-1 ---
+base_penalty: 4.0
+Rewards:
+base_reward: 0.8333333333333334
+2026-04-28 18:59:14 - Dirac allocation balance = 139 s
+2026-04-28 18:59:14 - Job submitted: job_id='69f0e76208442f441bba161a'
+2026-04-28 18:59:15 - QUEUED
+2026-04-28 18:59:17 - RUNNING
+2026-04-28 19:00:22 - COMPLETED
+2026-04-28 19:00:25 - Dirac allocation balance = 136 s
+  [OK] Ruta QCI Válida: depot -> D19_loc -> D9_loc -> D11_loc -> D13_loc -> D15_loc -> D10_loc -> depot
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 6
+  Vehículo V_Rent4 completó ruta.
+Entregas pendientes: 0 - []
+
+===== FIN DE LA SIMULACIÓN Q4RPD =====
+¡Todas las entregas completadas!
+
+Log de Rutas Completadas:
+  Ruta 1: Vehículo V_Rent1 | ruta  depot -> D2_loc -> D1_loc -> D27_loc -> D3_loc -> D25_loc -> D24_loc -> D26_loc -> D4_loc -> depot | total duration = 172.89121586697922 | capacity used = 279/290
+  Ruta 2: Vehículo V_Rent2 | ruta  depot -> D5_loc -> D12_loc -> D23_loc -> D14_loc -> D8_loc -> D29_loc -> D6_loc -> D28_loc -> D7_loc -> depot | total duration = 208.28347219651795 | capacity used = 277/290
+  Ruta 3: Vehículo V_Rent3 | ruta  depot -> D16_loc -> D17_loc -> D18_loc -> D22_loc -> D21_loc -> D20_loc -> depot | total duration = 142.73132135444797 | capacity used = 284/290
+  Ruta 4: Vehículo V_Rent4 | ruta  depot -> D19_loc -> D9_loc -> D11_loc -> D13_loc -> D15_loc -> D10_loc -> depot | total duration = 167.62027007951767 | capacity used = 267/290
+
+Generando gráficos...
+
+<Figure size 640x480 with 1 Axes>
+<Figure size 640x480 with 1 Axes>
+<Figure size 640x480 with 1 Axes>
+<Figure size 640x480 with 1 Axes>
+
+Total cost (duration/distance):  691.5262794974628
+Finished executing problem:  D29_P0
+###################################################################################
+

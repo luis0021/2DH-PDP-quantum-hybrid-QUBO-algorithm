@@ -1,0 +1,102 @@
+========================================================================
+Q4RPD - run reproducible
+  Fecha:           2026-05-27T07:11:21
+  Instancia:       D14_P1
+  Solver:          SA
+  Semilla:         47
+  omega2_factor:   0.21823125303860835
+  dynamic_omega:   False
+  generate_graphics: True
+  params_file:     autotune-results/individual_studies_first/q4rpd_D14_P1_00/best_params.json
+  [best_params aplicados]
+    base_penalty_factor: 12.501407850737529
+    omega2_over_omega1: 0.21823125303860835
+    p_origin_penalty_w: 3.173720260918566
+    p_delivery_once_w: 4.31419734766994
+    p_position_once_w: 5.188865087865622
+    p_dest_inclusion_w: 1.93983517783945
+    p_consecutiveness_w: 0.5946631376961617
+    p_capacity_w: 7.755634408484569
+    reward_regular: 2.65598211021986
+    reward_tp_depot: 2.473194858050638
+    reward_depot_tp: 0.6057699620842645
+========================================================================
+--- INICIALIZACION DEL SISTEMA ---
+
+--- ITERACION Q4RPD 1 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+candidate node: D6_loc
+candidate node: D9_loc
+candidate node: D3_loc
+candidate node: D5_loc
+candidate node: D8_loc
+candidate node: D4_loc
+  SRP Definido: 8 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.21823125303860835)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [OK] Ruta Valida: depot -> D9_loc -> D5_loc -> D6_loc -> TP1_loc (T=41.2)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 4
+Entregas pendientes: 10 - ['D2', 'D3', 'D4', 'D7', 'D8', '...']
+
+--- ITERACION Q4RPD 2 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'TP1_loc'
+  Tipo SRP: TP-Depot -> Destino: Depot
+candidate node: D3_loc
+candidate node: D8_loc
+candidate node: D4_loc
+  SRP Definido: 5 nodos, Max Dur: 438.8
+  Intento 1/1 (Sweeps=2250, Reads=150, w1=1.0, w2=0.21823125303860835)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [OK] Ruta Valida: TP1_loc -> D8_loc -> D3_loc -> D4_loc -> depot (T=47.2)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 3
+  Vehiculo V_Own1: ruta completa.
+Entregas pendientes: 7 - ['D2', 'D7', 'D10', 'D11', 'D12', '...']
+
+--- ITERACION Q4RPD 3 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own2 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+candidate node: D10_loc
+candidate node: D2_loc
+candidate node: D14_loc
+candidate node: D7_loc
+candidate node: D11_loc
+candidate node: D12_loc
+candidate node: D13_loc
+  SRP Definido: 8 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.21823125303860835)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [OK] Ruta Valida: depot -> D2_loc -> D7_loc -> D11_loc -> D13_loc -> D12_loc -> D14_loc -> D10_loc -> depot (T=112.7)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 7
+  Vehiculo V_Own2: ruta completa.
+Entregas pendientes: 0 - []
+
+===== FIN DE LA SIMULACION Q4RPD =====
+Todas las entregas completadas!
+
+Log de Rutas Completadas:
+  Ruta 1: Vehiculo V_Own1 | ruta  depot -> D9_loc -> D5_loc -> D6_loc -> TP1_loc | TP1_loc -> D8_loc -> D3_loc -> D4_loc -> depot | total duration = 88.46787669105669 | capacity used = 252/285
+  Ruta 2: Vehiculo V_Own2 | ruta  depot -> D2_loc -> D7_loc -> D11_loc -> D13_loc -> D12_loc -> D14_loc -> D10_loc -> depot | total duration = 112.73822468523457 | capacity used = 275/280
+
+Generando graficos...
+  [draw] Imagen guardada: results_indiv\D14_P1\SimAnn\run_seed47_tuned_20260527_071121\imgs\Ruta_1.png
+  [draw] Imagen guardada: results_indiv\D14_P1\SimAnn\run_seed47_tuned_20260527_071121\imgs\Ruta_2.png
+
+Entregas completadas: 14/14
+
+Total cost (duration/distance):  201.20610137629126

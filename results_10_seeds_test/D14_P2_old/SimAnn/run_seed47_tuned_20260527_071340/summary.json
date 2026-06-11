@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-05-27T07:13:46",
+  "problem": "D14_P2",
+  "solver": "SA",
+  "seed": 47,
+  "omega2_factor": 0.3093952737211912,
+  "dynamic_omega": false,
+  "params_file": "autotune-results/individual_studies_first/q4rpd_D14_P2_00/best_params.json",
+  "best_params_applied": {
+    "base_penalty_factor": 1.7438901487702725,
+    "omega2_over_omega1": 0.3093952737211912,
+    "p_origin_penalty_w": 3.1776704698711806,
+    "p_delivery_once_w": 4.186877975357118,
+    "p_position_once_w": 7.489726390405288,
+    "p_dest_inclusion_w": 2.7240381528945705,
+    "p_consecutiveness_w": 1.2156996242012588,
+    "p_capacity_w": 3.001050294363889,
+    "reward_regular": 1.712200593492158,
+    "reward_tp_depot": 2.794954964014225,
+    "reward_depot_tp": 0.19433412872369388
+  },
+  "result": {
+    "total_route_duration": 97.7090667783811,
+    "all_deliveries_done": false,
+    "max_iterations_reached": true,
+    "n_routes": 1
+  }
+}

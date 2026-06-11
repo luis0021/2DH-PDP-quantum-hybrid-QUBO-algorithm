@@ -1,0 +1,155 @@
+
+###################################################################################
+Executing problem:  D16_P1
+Problem data:
+
+dynamic_omega: False
+omega1: 1.0
+omega2: 0.15
+p_origin_penalty_w: 1.0
+p_delivery_once_w: 4.0
+p_position_once_w: 4.0
+p_dest_inclusion_w: 0.5
+p_consecutiveness_w: 0.5
+p_capacity_w: 2.0
+QCIUse: False
+num_reads_dwave: None
+num_sweeps_dwave: None
+--- INICIALIZACIÓN DEL SISTEMA ---
+
+--- ITERACIÓN Q4RPD 1 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Rent1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+candidate node: D3_loc
+candidate node: D8_loc
+candidate node: D9_loc
+candidate node: D6_loc
+candidate node: D5_loc
+candidate node: D2_loc
+  SRP Definido: 8 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.15)
+
+--- S2: SOLVER D-WAVE QUANTUM ANNEALER ---
+base_penalty: 4.0
+Rewards:
+base_reward: 0.11249999999999999
+  D-Wave devolvió 1 muestras. Buscando válida...
+Total samples: 50
+corrcectly_decoded: 1
+wrongly_decoded: 0
+not_decoded: 0
+  [OK] Ruta D-Wave Válida (E=-14.01): depot -> D9_loc -> D5_loc -> D6_loc -> TP1_loc (T=40.1)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 4
+Entregas pendientes: 12 - ['D2', 'D3', 'D4', 'D7', 'D8', '...']
+
+--- ITERACIÓN Q4RPD 2 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Rent1 en 'TP1_loc'
+  Tipo SRP: TP-Depot -> Destino: Depot
+candidate node: D3_loc
+candidate node: D8_loc
+candidate node: D2_loc
+candidate node: D11_loc
+candidate node: D10_loc
+candidate node: D14_loc
+candidate node: D13_loc
+candidate node: D12_loc
+  SRP Definido: 10 nodos, Max Dur: 439.9
+  Intento 1/1 (Sweeps=6000, Reads=300, w1=1.0, w2=0.15)
+
+--- S2: SOLVER D-WAVE QUANTUM ANNEALER ---
+base_penalty: 4.0
+Rewards:
+base_reward: 0.15
+  D-Wave devolvió 1 muestras. Buscando válida...
+Total samples: 50
+corrcectly_decoded: 1
+wrongly_decoded: 0
+not_decoded: 0
+  [OK] Ruta D-Wave Válida (E=-14.26): TP1_loc -> D8_loc -> D3_loc -> D2_loc -> depot (T=49.4)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 3
+  Vehículo V_Rent1 completó ruta.
+Entregas pendientes: 9 - ['D4', 'D7', 'D10', 'D11', 'D12', '...']
+
+--- ITERACIÓN Q4RPD 3 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Rent2 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+candidate node: D11_loc
+candidate node: D10_loc
+candidate node: D14_loc
+candidate node: D13_loc
+  SRP Definido: 5 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=2250, Reads=150, w1=1.0, w2=0.15)
+
+--- S2: SOLVER D-WAVE QUANTUM ANNEALER ---
+base_penalty: 4.0
+Rewards:
+base_reward: 1.5
+  D-Wave devolvió 1 muestras. Buscando válida...
+Total samples: 50
+corrcectly_decoded: 1
+wrongly_decoded: 0
+not_decoded: 0
+  [OK] Ruta D-Wave Válida (E=-16.09): depot -> D11_loc -> D13_loc -> D10_loc -> D14_loc -> depot (T=69.7)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 4
+  Vehículo V_Rent2 completó ruta.
+Entregas pendientes: 5 - ['D4', 'D7', 'D12', 'D15', 'D16', '...']
+
+--- ITERACIÓN Q4RPD 4 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Rent3 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+candidate node: D12_loc
+candidate node: D15_loc
+candidate node: D7_loc
+candidate node: D4_loc
+candidate node: D16_loc
+  SRP Definido: 6 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=2800, Reads=172, w1=1.0, w2=0.15)
+
+--- S2: SOLVER D-WAVE QUANTUM ANNEALER ---
+base_penalty: 4.0
+Rewards:
+base_reward: 1.3636363636363635
+  D-Wave devolvió 1 muestras. Buscando válida...
+Total samples: 50
+corrcectly_decoded: 1
+wrongly_decoded: 0
+not_decoded: 0
+  [OK] Ruta D-Wave Válida (E=-16.92): depot -> D12_loc -> D4_loc -> D7_loc -> D15_loc -> D16_loc -> depot (T=91.5)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 5
+  Vehículo V_Rent3 completó ruta.
+Entregas pendientes: 0 - []
+
+===== FIN DE LA SIMULACIÓN Q4RPD =====
+¡Todas las entregas completadas!
+
+Log de Rutas Completadas:
+  Ruta 1: Vehículo V_Rent1 | ruta  depot -> D9_loc -> D5_loc -> D6_loc -> TP1_loc | TP1_loc -> D8_loc -> D3_loc -> D2_loc -> depot | total duration = 89.50035067218737 | capacity used = 242/300
+  Ruta 2: Vehículo V_Rent2 | ruta  depot -> D11_loc -> D13_loc -> D10_loc -> D14_loc -> depot | total duration = 69.72863183158704 | capacity used = 175/200
+  Ruta 3: Vehículo V_Rent3 | ruta  depot -> D12_loc -> D4_loc -> D7_loc -> D15_loc -> D16_loc -> depot | total duration = 91.47650956809085 | capacity used = 177/195
+
+Generando gráficos...
+
+<Figure size 640x480 with 1 Axes>
+<Figure size 640x480 with 1 Axes>
+<Figure size 640x480 with 1 Axes>
+
+Total cost (duration/distance):  250.70549207186525
+Finished executing problem:  D16_P1
+###################################################################################
+

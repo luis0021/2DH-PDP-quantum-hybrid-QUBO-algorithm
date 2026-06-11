@@ -1,0 +1,158 @@
+========================================================================
+Q4RPD - run reproducible
+  Fecha:           2026-06-04T19:46:18
+  Instancia:       D14_P1
+  Solver:          DWave-QPU
+  Semilla:         42
+  omega2_factor:   0.15
+  dynamic_omega:   False
+  generate_graphics: True
+========================================================================
+--- INICIALIZACION DEL SISTEMA ---
+
+--- ITERACION Q4RPD 1 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+candidate node: D6_loc
+candidate node: D9_loc
+candidate node: D3_loc
+candidate node: D5_loc
+candidate node: D8_loc
+candidate node: D4_loc
+  SRP Definido: 8 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.15)
+
+--- S2: SOLVER D-WAVE QUANTUM ANNEALER ---
+base_penalty: 4.0
+Rewards: 
+base_reward: 0
+    chain_strength=<function uniform_torque_compensation at 0x000001BB2ED11900>
+Chain break fraction: 0.000697261663286004
+  vars_logicas=64  qubits_fisicos=350  cadena_max=8  media=5.5
+Response variables: 64
+  D-Wave devolvio 493 muestras. Buscando valida...
+Total samples: 500
+corrcectly_decoded: 0
+wrongly_decoded: 493
+not_decoded: 0
+    [Debug] Muestra invalida: ['Tiempo excedido: 73.7 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 86.9 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 94.0 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 95.9 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 97.8 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 131.1 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 117.3 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 136.4 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 143.9 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 129.7 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 124.2 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 152.6 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 113.7 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 134.3 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 150.1 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 135.9 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 157.0 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 115.0 > 50.0']
+    [Debug] Muestra invalida: ['Tiempo excedido: 119.0 > 50.0']
+  [!] Ninguna muestra de D-Wave fue valida.
+
+    FALLBACK ACTIVADO (D-Wave fallo)
+      Conmutando a Simulated Annealing local.
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+base_penalty: 4.0
+Rewards: 
+base_reward: 0
+  [OK] Ruta Valida: depot -> D9_loc -> D3_loc -> D6_loc -> TP1_loc (T=36.9)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 4
+Entregas pendientes: 10 - ['D2', 'D4', 'D5', 'D7', 'D8', '...']
+
+--- ITERACION Q4RPD 2 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'TP1_loc'
+  Tipo SRP: TP-Depot -> Destino: Depot
+candidate node: D5_loc
+candidate node: D8_loc
+candidate node: D4_loc
+  SRP Definido: 5 nodos, Max Dur: 443.1
+  Intento 1/1 (Sweeps=2250, Reads=150, w1=1.0, w2=0.15)
+
+--- S2: SOLVER D-WAVE QUANTUM ANNEALER ---
+base_penalty: 4.0
+Rewards: 
+base_reward: 0.15
+    chain_strength=<function uniform_torque_compensation at 0x000001BB2ED11900>
+Chain break fraction: 0.003636363636363636
+  vars_logicas=25  qubits_fisicos=63  cadena_max=3  media=2.5
+Response variables: 25
+  D-Wave devolvio 77 muestras. Buscando valida...
+Total samples: 500
+corrcectly_decoded: 44
+wrongly_decoded: 33
+not_decoded: 0
+  [OK] Ruta D-Wave Valida (E=-5.31): TP1_loc -> D5_loc -> D8_loc -> D4_loc -> depot (T=62.5)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 3
+  Vehiculo V_Own1: ruta completa.
+Entregas pendientes: 7 - ['D2', 'D7', 'D10', 'D11', 'D12', '...']
+
+--- ITERACION Q4RPD 3 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own2 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+  [K-medoids] Modo spatial (geografico puro)
+  [K-medoids] Convergencia en iteracion 2/15
+  [K-medoids] 1 clusters sobre 7 entregas regulares pendientes (K=1)
+    Cluster 1: 7 entregas, peso=275.0, dim=275.0, nodos=['D2_loc', 'D7_loc', 'D10_loc', 'D11_loc', 'D12_loc', 'D13_loc', 'D14_loc']
+  [K-medoids] Cluster asignado a V_Own2: 7 entregas, peso=275.0/280.0 (98.2%), dim=275.0/280.0 (98.2%)
+candidate node: D10_loc
+candidate node: D13_loc
+candidate node: D7_loc
+candidate node: D12_loc
+candidate node: D11_loc
+candidate node: D14_loc
+candidate node: D2_loc
+  SRP Definido: 8 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.15)
+
+--- S2: SOLVER D-WAVE QUANTUM ANNEALER ---
+base_penalty: 4.0
+Rewards: 
+base_reward: 1.153846153846154
+    chain_strength=<function uniform_torque_compensation at 0x000001BB2ED11900>
+Chain break fraction: 0.0004997334754797442
+  vars_logicas=64  qubits_fisicos=333  cadena_max=8  media=5.2
+Response variables: 64
+  D-Wave devolvio 469 muestras. Buscando valida...
+Total samples: 500
+corrcectly_decoded: 21
+wrongly_decoded: 448
+not_decoded: 0
+  [OK] Ruta D-Wave Valida (E=-9.56): depot -> D10_loc -> D14_loc -> D12_loc -> D13_loc -> D2_loc -> D7_loc -> D11_loc -> depot (T=134.3)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 7
+  Vehiculo V_Own2: ruta completa.
+Entregas pendientes: 0 - []
+
+===== FIN DE LA SIMULACION Q4RPD =====
+Todas las entregas completadas!
+
+Log de Rutas Completadas:
+  Ruta 1: Vehiculo V_Own1 | ruta  depot -> D9_loc -> D3_loc -> D6_loc -> TP1_loc | TP1_loc -> D5_loc -> D8_loc -> D4_loc -> depot | total duration = 99.36612171072134 | capacity used = 252/285
+  Ruta 2: Vehiculo V_Own2 | ruta  depot -> D10_loc -> D14_loc -> D12_loc -> D13_loc -> D2_loc -> D7_loc -> D11_loc -> depot | total duration = 134.26515817206874 | capacity used = 275/280
+
+Generando graficos...
+  [draw] Imagen guardada: results_indiv\test-without-cap\D14_P1\DWave-QPU\run_seed42_20260604_194618\imgs\Ruta_1.png
+  [draw] Imagen guardada: results_indiv\test-without-cap\D14_P1\DWave-QPU\run_seed42_20260604_194618\imgs\Ruta_2.png
+
+Entregas completadas: 14/14
+
+Total cost (duration/distance):  233.63127988279007

@@ -1,0 +1,169 @@
+========================================================================
+Q4RPD - run reproducible
+  Fecha:           2026-06-04T20:45:34
+  Instancia:       D14_P1
+  Solver:          DWave-QPU
+  Semilla:         42
+  omega2_factor:   0.15
+  dynamic_omega:   False
+  generate_graphics: True
+========================================================================
+--- INICIALIZACION DEL SISTEMA ---
+
+--- ITERACION Q4RPD 1 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+MAX_NODES_PER_SRP= 4
+candidate node: D6_loc
+candidate node: D9_loc
+candidate node: D3_loc
+candidate node: D5_loc
+  SRP Definido: 6 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=2800, Reads=172, w1=1.0, w2=0.15)
+
+--- S2: SOLVER D-WAVE QUANTUM ANNEALER ---
+base_penalty: 4.0
+Rewards: 
+base_reward: 0
+    chain_strength=<function uniform_torque_compensation at 0x0000017A28DB1AB0>
+Chain break fraction: 0.0065289648622981955
+  vars_logicas=36  qubits_fisicos=105  cadena_max=4  media=2.9
+Response variables: 36
+  D-Wave devolvio 234 muestras. Buscando valida...
+Total samples: 500
+corrcectly_decoded: 1
+wrongly_decoded: 233
+not_decoded: 0
+    [Debug] Muestra invalida: ['Tiempo excedido: 58.0 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-5.09): depot -> D9_loc -> D6_loc -> D3_loc -> D5_loc -> TP1_loc (T=58.0)
+    [Debug] Muestra invalida: ['Tiempo excedido: 58.2 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-5.08): depot -> D3_loc -> D9_loc -> D6_loc -> D5_loc -> TP1_loc (T=58.2)
+    [Debug] Muestra invalida: ['Tiempo excedido: 62.7 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-4.94): depot -> D3_loc -> D6_loc -> D9_loc -> D5_loc -> TP1_loc (T=62.7)
+    [Debug] Muestra invalida: ['Tiempo excedido: 75.8 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-4.93): depot -> D9_loc -> D5_loc -> D6_loc -> TP1_loc -> D3_loc -> TP1_loc (T=75.8)
+    [Debug] Muestra invalida: ['Tiempo excedido: 67.6 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-4.91): depot -> D9_loc -> D3_loc -> TP1_loc -> D6_loc -> D5_loc -> TP1_loc (T=67.6)
+    [Debug] Muestra invalida: ['Tiempo excedido: 73.7 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-4.87): depot -> D3_loc -> D9_loc -> D6_loc -> TP1_loc -> D5_loc -> TP1_loc (T=73.7)
+    [Debug] Muestra invalida: ['Tiempo excedido: 78.5 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-4.84): depot -> D9_loc -> D6_loc -> D5_loc -> TP1_loc -> D3_loc -> TP1_loc (T=78.5)
+    [Debug] Muestra invalida: ['Tiempo excedido: 71.1 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-4.77): depot -> D5_loc -> TP1_loc -> D3_loc -> TP1_loc (T=71.1)
+    [Debug] Muestra invalida: ['Tiempo excedido: 77.2 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-4.73): depot -> D9_loc -> D6_loc -> TP1_loc -> D5_loc -> D3_loc -> TP1_loc (T=77.2)
+    [Debug] Muestra invalida: ['Tiempo excedido: 82.7 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-4.72): depot -> D3_loc -> D6_loc -> TP1_loc -> D5_loc -> D9_loc -> TP1_loc (T=82.7)
+    [Debug] Muestra invalida: ['Tiempo excedido: 70.3 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-4.71): depot -> D6_loc -> D9_loc -> D3_loc -> D5_loc -> TP1_loc (T=70.3)
+    [Debug] Muestra invalida: ['Tiempo excedido: 77.2 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-4.61): depot -> D9_loc -> D6_loc -> TP1_loc -> D3_loc -> D5_loc -> TP1_loc (T=77.2)
+    [Debug] Muestra invalida: ['Tiempo excedido: 74.9 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-4.56): depot -> D6_loc -> D5_loc -> D3_loc -> D9_loc -> TP1_loc (T=74.9)
+    [Debug] Muestra invalida: ['Tiempo excedido: 79.3 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-4.51): depot -> D9_loc -> TP1_loc -> D5_loc -> D6_loc -> D3_loc -> TP1_loc (T=79.3)
+    [Debug] Muestra invalida: ['Tiempo excedido: 85.5 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-4.50): depot -> D3_loc -> D6_loc -> D9_loc -> TP1_loc -> D5_loc -> TP1_loc (T=85.5)
+    [Debug] Muestra invalida: ['Tiempo excedido: 78.3 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-4.47): depot -> D3_loc -> D9_loc -> TP1_loc -> D5_loc -> D6_loc -> TP1_loc (T=78.3)
+    [Debug] Muestra invalida: ['Tiempo excedido: 82.7 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-4.44): depot -> D3_loc -> D6_loc -> TP1_loc -> D9_loc -> D5_loc -> TP1_loc (T=82.7)
+    [Debug] Muestra invalida: ['Tiempo excedido: 81.8 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-4.44): depot -> D9_loc -> TP1_loc -> D6_loc -> D5_loc -> D3_loc -> TP1_loc (T=81.8)
+    [Debug] Muestra invalida: ['Tiempo excedido: 92.1 > 50.0']
+  [OK] Ruta D-Wave Valida (E=-4.43): depot -> D6_loc -> D3_loc -> TP1_loc -> D9_loc -> TP1_loc (T=92.1)
+  [OK] Ruta D-Wave Valida (E=-3.78): depot -> D9_loc -> D6_loc -> D5_loc -> TP1_loc (T=44.0)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 4
+Entregas pendientes: 10 - ['D2', 'D3', 'D4', 'D7', 'D8', '...']
+
+--- ITERACION Q4RPD 2 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'TP1_loc'
+  Tipo SRP: TP-Depot -> Destino: Depot
+MAX_NODES_PER_SRP= 8
+candidate node: D3_loc
+candidate node: D8_loc
+candidate node: D4_loc
+  SRP Definido: 5 nodos, Max Dur: 436.0
+  Intento 1/1 (Sweeps=2250, Reads=150, w1=1.0, w2=0.15)
+
+--- S2: SOLVER D-WAVE QUANTUM ANNEALER ---
+base_penalty: 4.0
+Rewards: 
+base_reward: 0.15
+    chain_strength=<function uniform_torque_compensation at 0x0000017A28DB1AB0>
+Chain break fraction: 0.00031746031746031746
+  vars_logicas=25  qubits_fisicos=60  cadena_max=3  media=2.4
+Response variables: 25
+  D-Wave devolvio 126 muestras. Buscando valida...
+Total samples: 500
+corrcectly_decoded: 78
+wrongly_decoded: 48
+not_decoded: 0
+  [OK] Ruta D-Wave Valida (E=-5.77): TP1_loc -> D8_loc -> D3_loc -> D4_loc -> depot (T=47.2)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 3
+  Vehiculo V_Own1: ruta completa.
+Entregas pendientes: 7 - ['D2', 'D7', 'D10', 'D11', 'D12', '...']
+
+--- ITERACION Q4RPD 3 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own2 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+MAX_NODES_PER_SRP= 8
+  [K-medoids] Modo spatial (geografico puro)
+  [K-medoids] Convergencia en iteracion 2/15
+  [K-medoids] 1 clusters sobre 7 entregas regulares pendientes (K=1)
+    Cluster 1: 7 entregas, peso=275.0, dim=275.0, nodos=['D2_loc', 'D7_loc', 'D10_loc', 'D11_loc', 'D12_loc', 'D13_loc', 'D14_loc']
+  [K-medoids] Cluster asignado a V_Own2: 7 entregas, peso=275.0/280.0 (98.2%), dim=275.0/280.0 (98.2%)
+candidate node: D10_loc
+candidate node: D13_loc
+candidate node: D7_loc
+candidate node: D12_loc
+candidate node: D11_loc
+candidate node: D14_loc
+candidate node: D2_loc
+  SRP Definido: 8 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.15)
+
+--- S2: SOLVER D-WAVE QUANTUM ANNEALER ---
+base_penalty: 4.0
+Rewards: 
+base_reward: 1.153846153846154
+    chain_strength=<function uniform_torque_compensation at 0x0000017A28DB1AB0>
+Chain break fraction: 0.006983418367346938
+  vars_logicas=64  qubits_fisicos=331  cadena_max=8  media=5.2
+Response variables: 64
+  D-Wave devolvio 490 muestras. Buscando valida...
+Total samples: 500
+corrcectly_decoded: 14
+wrongly_decoded: 476
+not_decoded: 0
+  [OK] Ruta D-Wave Valida (E=-9.70): depot -> D2_loc -> D7_loc -> D11_loc -> D14_loc -> D10_loc -> D12_loc -> D13_loc -> depot (T=139.4)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 7
+  Vehiculo V_Own2: ruta completa.
+Entregas pendientes: 0 - []
+
+===== FIN DE LA SIMULACION Q4RPD =====
+Todas las entregas completadas!
+
+Log de Rutas Completadas:
+  Ruta 1: Vehiculo V_Own1 | ruta  depot -> D9_loc -> D6_loc -> D5_loc -> TP1_loc | TP1_loc -> D8_loc -> D3_loc -> D4_loc -> depot | total duration = 91.24094199386248 | capacity used = 252/285
+  Ruta 2: Vehiculo V_Own2 | ruta  depot -> D2_loc -> D7_loc -> D11_loc -> D14_loc -> D10_loc -> D12_loc -> D13_loc -> depot | total duration = 139.3893077291539 | capacity used = 275/280
+
+Generando graficos...
+  [draw] Imagen guardada: results_indiv\test-without-cap\D14_P1\DWave-QPU\run_seed42_20260604_204534\imgs\Ruta_1.png
+  [draw] Imagen guardada: results_indiv\test-without-cap\D14_P1\DWave-QPU\run_seed42_20260604_204534\imgs\Ruta_2.png
+
+Entregas completadas: 14/14
+
+Total cost (duration/distance):  230.6302497230164

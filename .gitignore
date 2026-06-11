@@ -1,0 +1,35 @@
+# =====================================================================
+#  .gitignore — 2DH-PDP-quantum-hybrid-QUBO-algorithm
+#  Criterio: ignorar lo pesado y regenerable; conservar los resultados
+#  que respaldan los experimentos (.json y .csv de results*/ y
+#  autotune-results/).
+# =====================================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---------- Secretos / entorno ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Auto-tuner Optuna ----------
+# Las bases SQLite son regenerables. Lo valioso del estudio
+# (best_params.json, trials.csv, importance.csv) SÍ se versiona.
+*.db
+optuna_study.db
+
+# ---------- Sistema operativo / editores ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~

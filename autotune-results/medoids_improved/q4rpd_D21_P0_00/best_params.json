@@ -1,0 +1,46 @@
+{
+  "best_score": 421.6640918605558,
+  "best_params": {
+    "base_penalty_factor": 1.3378175090217308,
+    "omega2_over_omega1": 0.15338673010402742,
+    "p_origin_penalty_w": 2.1554389167526837,
+    "p_delivery_once_w": 6.717895488972395,
+    "p_position_once_w": 5.142190521153276,
+    "p_dest_inclusion_w": 3.415452085882379,
+    "p_consecutiveness_w": 0.3720721958413712,
+    "p_capacity_w": 1.2983149505566296,
+    "reward_regular": 0.9984938647683634,
+    "reward_tp_depot": 0.17937423661749274,
+    "reward_depot_tp": 1.5738404501668257
+  },
+  "best_user_attrs": {
+    "avg_cost": 421.6640918605558,
+    "delivery_fraction": 1.0,
+    "elapsed_s": 10.191662549972534,
+    "n_runs": 10,
+    "n_valid": 10,
+    "per_instance": "{\"D21_P0\": {\"valid\": 10, \"total\": 10, \"avg_cost\": 421.6640918605558, \"avg_delivery_frac\": 1.0}}",
+    "pruned": false,
+    "tiers_done": 1,
+    "validity_rate": 1.0
+  },
+  "instances": [
+    "D21_P0"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "n_trials": 100,
+  "fast_sa": false,
+  "medium_fast_sa": true,
+  "n_tiers": 3
+}

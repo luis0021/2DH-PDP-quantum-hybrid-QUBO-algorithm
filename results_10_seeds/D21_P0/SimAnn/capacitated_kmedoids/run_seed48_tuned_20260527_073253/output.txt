@@ -1,0 +1,133 @@
+========================================================================
+Q4RPD - run reproducible
+  Fecha:           2026-05-27T07:32:53
+  Instancia:       D21_P0
+  Solver:          SA
+  Semilla:         48
+  omega2_factor:   0.14633380642745356
+  dynamic_omega:   False
+  generate_graphics: True
+  params_file:     autotune-results/medoids_improved/q4rpd_D21_P0_01/best_params.json
+  [best_params aplicados]
+    base_penalty_factor: 1.292552839158203
+    omega2_over_omega1: 0.14633380642745356
+    p_origin_penalty_w: 0.905541708337954
+    p_delivery_once_w: 7.041723981129155
+    p_position_once_w: 5.363086887792905
+    p_dest_inclusion_w: 1.3905022969253318
+    p_consecutiveness_w: 0.34787756611549214
+    p_capacity_w: 2.8323674128674665
+    reward_regular: 0.9755499660802411
+    reward_tp_depot: 2.1888185350141924
+    reward_depot_tp: 1.9126724140656393
+========================================================================
+--- INICIALIZACION DEL SISTEMA ---
+
+--- ITERACION Q4RPD 1 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+  [K-medoids] Modo capacitated (alpha=1.00)
+  [K-medoids] Convergencia en iteracion 3/15
+  [K-medoids] 2 nodos diferidos por recorte (peso=135.0)
+  [K-medoids] 2 nodo(s) sin cluster tras redistribucion (peso=135.0)
+  [K-medoids] 3 clusters sobre 21 entregas regulares pendientes (K=3)
+    Cluster 1: 5 entregas, peso=260.0, dim=212.0, nodos=['D17_loc', 'D18_loc', 'D19_loc', 'D20_loc', 'D21_loc']
+    Cluster 2: 9 entregas, peso=236.0, dim=264.0, nodos=['D2_loc', 'D3_loc', 'D4_loc', 'D5_loc', 'D6_loc', 'D7_loc', 'D8_loc', 'D9_loc', 'D10_loc']
+    Cluster 3: 5 entregas, peso=189.0, dim=233.0, nodos=['D11_loc', 'D12_loc', 'D13_loc', 'D14_loc', 'D15_loc']
+  [K-medoids] Cluster asignado a V_Own1: 9 entregas, peso=236.0/265.0 (89.1%), dim=264.0/290.0 (91.0%)
+candidate node: D10_loc
+candidate node: D9_loc
+candidate node: D7_loc
+candidate node: D3_loc
+candidate node: D8_loc
+candidate node: D4_loc
+candidate node: D6_loc
+candidate node: D5_loc
+candidate node: D2_loc
+  SRP Definido: 10 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=6000, Reads=300, w1=1.0, w2=0.14633380642745356)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [OK] Ruta Valida: depot -> D10_loc -> D9_loc -> D2_loc -> D3_loc -> D4_loc -> D5_loc -> D6_loc -> D7_loc -> D8_loc -> depot (T=138.9)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 9
+  Vehiculo V_Own1: ruta completa.
+Entregas pendientes: 12 - ['D1', 'D11', 'D12', 'D13', 'D14', '...']
+
+--- ITERACION Q4RPD 2 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own2 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+  [K-medoids] Modo capacitated (alpha=1.00)
+  [K-medoids] Convergencia en iteracion 2/15
+  [K-medoids] 2 nodos diferidos por recorte (peso=135.0)
+  [K-medoids] Redistribucion global: 1 nodo(s) reabsorbido(s) en otros clusters -> ['D16_loc']
+  [K-medoids] 1 nodo(s) sin cluster tras redistribucion (peso=80.0)
+  [K-medoids] 2 clusters sobre 12 entregas regulares pendientes (K=2)
+    Cluster 1: 5 entregas, peso=260.0, dim=212.0, nodos=['D17_loc', 'D18_loc', 'D19_loc', 'D20_loc', 'D21_loc']
+    Cluster 2: 6 entregas, peso=244.0, dim=295.0, nodos=['D11_loc', 'D12_loc', 'D13_loc', 'D14_loc', 'D15_loc', 'D16_loc']
+  [K-medoids] Cluster asignado a V_Own2: 6 entregas, peso=244.0/260.0 (93.8%), dim=295.0/340.0 (86.8%)
+candidate node: D16_loc
+candidate node: D13_loc
+candidate node: D14_loc
+candidate node: D11_loc
+candidate node: D15_loc
+candidate node: D12_loc
+  SRP Definido: 7 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=3450, Reads=198, w1=1.0, w2=0.14633380642745356)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [OK] Ruta Valida: depot -> D14_loc -> D13_loc -> D15_loc -> D12_loc -> D11_loc -> D16_loc -> depot (T=125.7)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 6
+  Vehiculo V_Own2: ruta completa.
+Entregas pendientes: 6 - ['D1', 'D17', 'D18', 'D19', 'D20', '...']
+
+--- ITERACION Q4RPD 3 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Rent1 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+  [K-medoids] Modo capacitated (alpha=1.00)
+  [K-medoids] Convergencia en iteracion 2/15
+  [K-medoids] 1 clusters sobre 6 entregas regulares pendientes (K=1)
+    Cluster 1: 6 entregas, peso=340.0, dim=272.0, nodos=['D1_loc', 'D17_loc', 'D18_loc', 'D19_loc', 'D20_loc', 'D21_loc']
+  [K-medoids] Cluster asignado a V_Rent1: 6 entregas, peso=340.0/360.0 (94.4%), dim=272.0/400.0 (68.0%)
+candidate node: D1_loc
+candidate node: D18_loc
+candidate node: D17_loc
+candidate node: D19_loc
+candidate node: D20_loc
+candidate node: D21_loc
+  SRP Definido: 7 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=3450, Reads=198, w1=1.0, w2=0.14633380642745356)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [OK] Ruta Valida: depot -> D1_loc -> D19_loc -> D18_loc -> D21_loc -> D20_loc -> D17_loc -> depot (T=158.1)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 6
+  Vehiculo V_Rent1: ruta completa.
+Entregas pendientes: 0 - []
+
+===== FIN DE LA SIMULACION Q4RPD =====
+Todas las entregas completadas!
+
+Log de Rutas Completadas:
+  Ruta 1: Vehiculo V_Own1 | ruta  depot -> D10_loc -> D9_loc -> D2_loc -> D3_loc -> D4_loc -> D5_loc -> D6_loc -> D7_loc -> D8_loc -> depot | total duration = 138.86353009114256 | capacity used = 236/265
+  Ruta 2: Vehiculo V_Own2 | ruta  depot -> D14_loc -> D13_loc -> D15_loc -> D12_loc -> D11_loc -> D16_loc -> depot | total duration = 125.69682636369683 | capacity used = 244/260
+  Ruta 3: Vehiculo V_Rent1 | ruta  depot -> D1_loc -> D19_loc -> D18_loc -> D21_loc -> D20_loc -> D17_loc -> depot | total duration = 158.11265868382463 | capacity used = 340/360
+
+Generando graficos...
+  [draw] Imagen guardada: results_01\D21_P0\SimAnn\run_seed48_tuned_20260527_073253\imgs\Ruta_1.png
+  [draw] Imagen guardada: results_01\D21_P0\SimAnn\run_seed48_tuned_20260527_073253\imgs\Ruta_2.png
+  [draw] Imagen guardada: results_01\D21_P0\SimAnn\run_seed48_tuned_20260527_073253\imgs\Ruta_3.png
+
+Entregas completadas: 21/21
+
+Total cost (duration/distance):  422.673015138664

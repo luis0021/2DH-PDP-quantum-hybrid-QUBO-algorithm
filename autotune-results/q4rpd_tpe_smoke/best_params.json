@@ -1,0 +1,32 @@
+{
+  "best_score": 95.83073068814329,
+  "best_params": {
+    "base_penalty_factor": 21.64652763840048,
+    "omega2_over_omega1": 0.20574807773456674,
+    "p_origin_penalty_w": 0.918579860784056,
+    "p_delivery_once_w": 5.992713510560965,
+    "p_position_once_w": 6.325495340318282,
+    "p_dest_inclusion_w": 2.2889810705210354,
+    "p_consecutiveness_w": 3.106772001822788,
+    "p_capacity_w": 4.20346697273293,
+    "reward_regular": 1.568198488145982,
+    "reward_tp_depot": 1.282623055075649,
+    "reward_depot_tp": 0.07625738023228557
+  },
+  "best_user_attrs": {
+    "avg_cost": 95.83073068814329,
+    "elapsed_s": 2.143228769302368,
+    "n_runs": 2,
+    "n_valid": 2,
+    "per_instance": "{\"D6_P0\": {\"valid\": 1, \"total\": 1, \"avg_cost\": 78.77728919849595}, \"D10_P0\": {\"valid\": 1, \"total\": 1, \"avg_cost\": 112.88417217779065}}",
+    "validity_rate": 1.0
+  },
+  "instances": [
+    "D6_P0",
+    "D10_P0"
+  ],
+  "seeds": [
+    0
+  ],
+  "n_trials": 10
+}

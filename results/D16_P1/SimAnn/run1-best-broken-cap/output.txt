@@ -1,0 +1,108 @@
+
+###################################################################################
+Executing problem:  D16_P1
+Problem data:
+
+dynamic_omega: False
+omega1: 1.0
+omega2: 0.15
+p_origin_penalty_w: 1.0
+p_delivery_once_w: 4.0
+p_position_once_w: 4.0
+p_dest_inclusion_w: 0.5
+p_consecutiveness_w: 0.5
+p_capacity_w: 1.0
+QCIUse: False
+num_reads_dwave: None
+num_sweeps_dwave: None
+--- INICIALIZACIÓN DEL SISTEMA ---
+
+--- ITERACIÓN Q4RPD 1 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Rent1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+  SRP Definido: 8 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.15)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+Rewards:
+base_reward: 0.01875
+  [OK] Ruta Válida: depot -> D9_loc -> D5_loc -> D6_loc -> TP1_loc (T=40.1)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 4
+Entregas pendientes: 12 - ['D2', 'D3', 'D4', 'D7', 'D8', '...']
+
+--- ITERACIÓN Q4RPD 2 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Rent1 en 'TP1_loc'
+  Tipo SRP: TP-Depot -> Destino: Depot
+  SRP Definido: 14 nodos, Max Dur: 439.9
+  Intento 1/1 (Sweeps=10800, Reads=492, w1=1.0, w2=0.15)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+Rewards:
+base_reward: 0.0375
+  [OK] Ruta Válida: TP1_loc -> D8_loc -> D3_loc -> depot (T=35.6)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 2
+  Vehículo V_Rent1 completó ruta.
+Entregas pendientes: 10 - ['D2', 'D4', 'D7', 'D10', 'D11', '...']
+
+--- ITERACIÓN Q4RPD 3 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Rent2 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+  SRP Definido: 11 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=7050, Reads=342, w1=1.0, w2=0.15)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+Rewards:
+base_reward: 0.9375
+  [OK] Ruta Válida: depot -> D2_loc -> D10_loc -> D14_loc -> D12_loc -> D4_loc -> D7_loc -> D15_loc -> D16_loc -> depot (T=95.2)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 8
+  Vehículo V_Rent2 completó ruta.
+Entregas pendientes: 2 - ['D11', 'D13']
+
+--- ITERACIÓN Q4RPD 4 ---
+
+--- S1: CONFIGURACIÓN DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehículo seleccionado: V_Rent3 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+  SRP Definido: 3 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=1450, Reads=118, w1=1.0, w2=0.15)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+Rewards:
+base_reward: 1.875
+  [OK] Ruta Válida: depot -> D11_loc -> D13_loc -> depot (T=47.4)
+
+--- S3: ACTUALIZACIÓN ---
+  Entregas servidas: 2
+  Vehículo V_Rent3 completó ruta.
+Entregas pendientes: 0 - []
+
+===== FIN DE LA SIMULACIÓN Q4RPD =====
+¡Todas las entregas completadas!
+
+Log de Rutas Completadas:
+  Ruta 1: Vehículo V_Rent1 | ruta  depot -> D9_loc -> D5_loc -> D6_loc -> TP1_loc | TP1_loc -> D8_loc -> D3_loc -> depot | total duration = 75.65400942481598
+  Ruta 2: Vehículo V_Rent2 | ruta  depot -> D2_loc -> D10_loc -> D14_loc -> D12_loc -> D4_loc -> D7_loc -> D15_loc -> D16_loc -> depot | total duration = 95.1516458374712
+  Ruta 3: Vehículo V_Rent3 | ruta  depot -> D11_loc -> D13_loc -> depot | total duration = 47.43959572273499
+
+Generando gráficos...
+
+<Figure size 640x480 with 1 Axes>
+<Figure size 640x480 with 1 Axes>
+<Figure size 640x480 with 1 Axes>
+
+Total cost (duration/distance):  218.24525098502218
+Finished executing problem:  D16_P1
+###################################################################################
+

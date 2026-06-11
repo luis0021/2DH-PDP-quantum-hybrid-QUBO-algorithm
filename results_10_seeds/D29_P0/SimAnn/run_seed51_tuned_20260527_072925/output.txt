@@ -1,0 +1,136 @@
+========================================================================
+Q4RPD - run reproducible
+  Fecha:           2026-05-27T07:29:25
+  Instancia:       D29_P0
+  Solver:          SA
+  Semilla:         51
+  omega2_factor:   0.08175056421000614
+  dynamic_omega:   False
+  generate_graphics: True
+  params_file:     autotune-results/medoids_improved/q4rpd_D29_P0_00/best_params.json
+  [best_params aplicados]
+    base_penalty_factor: 1.225074343175008
+    omega2_over_omega1: 0.08175056421000614
+    p_origin_penalty_w: 0.8085666890590023
+    p_delivery_once_w: 5.3979349413784155
+    p_position_once_w: 6.994354666463019
+    p_dest_inclusion_w: 0.7573131694244946
+    p_consecutiveness_w: 0.5671516032368413
+    p_capacity_w: 5.7946332845841955
+    reward_regular: 1.6824598220673141
+    reward_tp_depot: 2.388651722421638
+    reward_depot_tp: 1.3259004834577663
+========================================================================
+--- INICIALIZACION DEL SISTEMA ---
+
+--- ITERACION Q4RPD 1 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Rent1 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+candidate node: D24_loc
+candidate node: D3_loc
+candidate node: D26_loc
+candidate node: D25_loc
+candidate node: D27_loc
+candidate node: D4_loc
+candidate node: D2_loc
+candidate node: D1_loc
+  SRP Definido: 9 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=5050, Reads=262, w1=1.0, w2=0.08175056421000614)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [OK] Ruta Valida: depot -> D2_loc -> D1_loc -> D4_loc -> D26_loc -> D27_loc -> D3_loc -> D25_loc -> D24_loc -> depot (T=173.1)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 8
+  Vehiculo V_Rent1: ruta completa.
+Entregas pendientes: 21 - ['D5', 'D6', 'D7', 'D8', 'D9', '...']
+
+--- ITERACION Q4RPD 2 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Rent2 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+candidate node: D29_loc
+candidate node: D7_loc
+candidate node: D6_loc
+candidate node: D8_loc
+candidate node: D28_loc
+candidate node: D5_loc
+candidate node: D12_loc
+candidate node: D14_loc
+candidate node: D23_loc
+  SRP Definido: 10 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=6000, Reads=300, w1=1.0, w2=0.08175056421000614)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [OK] Ruta Valida: depot -> D12_loc -> D5_loc -> D28_loc -> D6_loc -> D7_loc -> D29_loc -> D8_loc -> D14_loc -> D23_loc -> depot (T=188.7)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 9
+  Vehiculo V_Rent2: ruta completa.
+Entregas pendientes: 12 - ['D9', 'D10', 'D11', 'D13', 'D15', '...']
+
+--- ITERACION Q4RPD 3 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Rent3 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+candidate node: D21_loc
+candidate node: D22_loc
+candidate node: D20_loc
+candidate node: D17_loc
+candidate node: D18_loc
+candidate node: D16_loc
+  SRP Definido: 7 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=3450, Reads=198, w1=1.0, w2=0.08175056421000614)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [OK] Ruta Valida: depot -> D18_loc -> D22_loc -> D21_loc -> D20_loc -> D17_loc -> D16_loc -> depot (T=123.1)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 6
+  Vehiculo V_Rent3: ruta completa.
+Entregas pendientes: 6 - ['D9', 'D10', 'D11', 'D13', 'D15', '...']
+
+--- ITERACION Q4RPD 4 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Rent4 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+candidate node: D9_loc
+candidate node: D19_loc
+candidate node: D11_loc
+candidate node: D15_loc
+candidate node: D10_loc
+candidate node: D13_loc
+  SRP Definido: 7 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=3450, Reads=198, w1=1.0, w2=0.08175056421000614)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [OK] Ruta Valida: depot -> D19_loc -> D9_loc -> D11_loc -> D13_loc -> D15_loc -> D10_loc -> depot (T=167.6)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 6
+  Vehiculo V_Rent4: ruta completa.
+Entregas pendientes: 0 - []
+
+===== FIN DE LA SIMULACION Q4RPD =====
+Todas las entregas completadas!
+
+Log de Rutas Completadas:
+  Ruta 1: Vehiculo V_Rent1 | ruta  depot -> D2_loc -> D1_loc -> D4_loc -> D26_loc -> D27_loc -> D3_loc -> D25_loc -> D24_loc -> depot | total duration = 173.12576369495736 | capacity used = 279/290
+  Ruta 2: Vehiculo V_Rent2 | ruta  depot -> D12_loc -> D5_loc -> D28_loc -> D6_loc -> D7_loc -> D29_loc -> D8_loc -> D14_loc -> D23_loc -> depot | total duration = 188.74389276568436 | capacity used = 277/290
+  Ruta 3: Vehiculo V_Rent3 | ruta  depot -> D18_loc -> D22_loc -> D21_loc -> D20_loc -> D17_loc -> D16_loc -> depot | total duration = 123.09872640656548 | capacity used = 284/290
+  Ruta 4: Vehiculo V_Rent4 | ruta  depot -> D19_loc -> D9_loc -> D11_loc -> D13_loc -> D15_loc -> D10_loc -> depot | total duration = 167.62027007951767 | capacity used = 267/290
+
+Generando graficos...
+  [draw] Imagen guardada: results_01\D29_P0\SimAnn\run_seed51_tuned_20260527_072925\imgs\Ruta_1.png
+  [draw] Imagen guardada: results_01\D29_P0\SimAnn\run_seed51_tuned_20260527_072925\imgs\Ruta_2.png
+  [draw] Imagen guardada: results_01\D29_P0\SimAnn\run_seed51_tuned_20260527_072925\imgs\Ruta_3.png
+  [draw] Imagen guardada: results_01\D29_P0\SimAnn\run_seed51_tuned_20260527_072925\imgs\Ruta_4.png
+
+Entregas completadas: 29/29
+
+Total cost (duration/distance):  652.5886529467249

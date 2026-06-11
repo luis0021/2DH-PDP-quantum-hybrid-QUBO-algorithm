@@ -1,0 +1,32 @@
+# Dependencias del TFM Q4RPD (versión QUBO híbrida)
+# -----------------------------------------------------------------
+# Para crear un entorno limpio:
+#     python -m venv .venv
+#     source .venv/bin/activate    (Windows: .venv\Scripts\activate)
+#     pip install -r requirements.txt
+#
+# Versiones probadas en mayo de 2026. Para reproducir resultados se
+# recomienda fijar versiones; si quieres usar las más recientes, retira
+# los "==".
+
+# Solver clásico y modelado QUBO/BQM
+dimod==0.12.17
+dwave-neal==0.6.0          # Simulated Annealing local
+dwave-samplers==1.2.0       # SimulatedAnnealingSampler
+
+# Acceso a D-Wave Leap (Hybrid + QPU)
+dwave-system==1.26.0
+dwave-cloud-client==0.12.0
+dwave-inspector==0.5.0
+
+# QCI Dirac-1 / Dirac-3
+qci-client==4.4.1
+
+# Numérico y científico
+numpy==1.26.4
+scipy==1.13.1
+matplotlib==3.9.2
+python-dateutil==2.9.0
+
+# Utilidades
+python-dotenv==1.0.1        # carga automática de .env (opcional, recomendado)

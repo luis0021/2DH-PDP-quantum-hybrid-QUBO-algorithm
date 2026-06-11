@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-05-13T13:07:36",
+  "problem": "D14_P1",
+  "solver": "SA",
+  "seed": 5,
+  "omega2_factor": 0.15,
+  "dynamic_omega": false,
+  "result": {
+    "total_route_duration": 223.88354792035796,
+    "all_deliveries_done": true,
+    "max_iterations_reached": false,
+    "n_routes": 2
+  }
+}

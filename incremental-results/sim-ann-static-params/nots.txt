@@ -1,0 +1,3 @@
+Static params:
+    num_reads = 500
+    num_sweeps = 10000

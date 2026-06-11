@@ -1,0 +1,155 @@
+========================================================================
+Q4RPD - run reproducible
+  Fecha:           2026-06-03T21:59:46
+  Instancia:       D14_P1
+  Solver:          DWave-QPU
+  Semilla:         42
+  omega2_factor:   0.15
+  dynamic_omega:   False
+  generate_graphics: True
+========================================================================
+--- INICIALIZACION DEL SISTEMA ---
+
+--- ITERACION Q4RPD 1 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+candidate node: D6_loc
+candidate node: D9_loc
+candidate node: D3_loc
+candidate node: D5_loc
+candidate node: D8_loc
+candidate node: D4_loc
+  SRP Definido: 8 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.15)
+
+--- S2: SOLVER D-WAVE QUANTUM ANNEALER ---
+base_penalty: 4.0
+Rewards: 
+base_reward: 0.11249999999999999
+    chain_strength=31.891043397968602
+Chain break fraction: 0.0006376811594202899
+Response variables: 69
+  D-Wave devolvio 1000 muestras. Buscando valida...
+Total samples: 1000
+corrcectly_decoded: 0
+wrongly_decoded: 1000
+not_decoded: 0
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+    [Debug] Muestra invalida: ['Fallo estructural: posiciones o nodos duplicados (one-hot violado)']
+  Error D-Wave: local variable 'dwave_success' referenced before assignment
+
+    FALLBACK ACTIVADO (D-Wave fallo)
+      Conmutando a Simulated Annealing local.
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+base_penalty: 4.0
+Rewards: 
+base_reward: 0.11249999999999999
+  [OK] Ruta Valida: depot -> D9_loc -> D3_loc -> D6_loc -> TP1_loc (T=36.9)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 4
+Entregas pendientes: 10 - ['D2', 'D4', 'D5', 'D7', 'D8', '...']
+
+--- ITERACION Q4RPD 2 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'TP1_loc'
+  Tipo SRP: TP-Depot -> Destino: Depot
+candidate node: D5_loc
+candidate node: D8_loc
+candidate node: D4_loc
+  SRP Definido: 5 nodos, Max Dur: 443.1
+  Intento 1/1 (Sweeps=2250, Reads=150, w1=1.0, w2=0.15)
+
+--- S2: SOLVER D-WAVE QUANTUM ANNEALER ---
+base_penalty: 4.0
+Rewards: 
+base_reward: 0.15
+    chain_strength=30.0
+Chain break fraction: 0.0
+Response variables: 30
+  D-Wave devolvio 857 muestras. Buscando valida...
+Total samples: 1000
+corrcectly_decoded: 423
+wrongly_decoded: 434
+not_decoded: 0
+  [OK] Ruta D-Wave Valida (E=-13.29): TP1_loc -> D5_loc -> D8_loc -> D4_loc -> depot (T=62.5)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 3
+  Vehiculo V_Own1: ruta completa.
+Entregas pendientes: 7 - ['D2', 'D7', 'D10', 'D11', 'D12', '...']
+
+--- ITERACION Q4RPD 3 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own2 en 'depot'
+  Tipo SRP: Regular -> Destino: Depot
+  [K-medoids] Modo spatial (geografico puro)
+  [K-medoids] Convergencia en iteracion 2/15
+  [K-medoids] 1 clusters sobre 7 entregas regulares pendientes (K=1)
+    Cluster 1: 7 entregas, peso=275.0, dim=275.0, nodos=['D2_loc', 'D7_loc', 'D10_loc', 'D11_loc', 'D12_loc', 'D13_loc', 'D14_loc']
+  [K-medoids] Cluster asignado a V_Own2: 7 entregas, peso=275.0/280.0 (98.2%), dim=275.0/280.0 (98.2%)
+candidate node: D10_loc
+candidate node: D13_loc
+candidate node: D7_loc
+candidate node: D12_loc
+candidate node: D11_loc
+candidate node: D14_loc
+candidate node: D2_loc
+  SRP Definido: 8 nodos, Max Dur: 480.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.15)
+
+--- S2: SOLVER D-WAVE QUANTUM ANNEALER ---
+base_penalty: 4.0
+Rewards: 
+base_reward: 1.153846153846154
+    chain_strength=25.10204081632653
+Chain break fraction: 0.0011884057971014493
+Response variables: 69
+  D-Wave devolvio 1000 muestras. Buscando valida...
+Total samples: 1000
+corrcectly_decoded: 7
+wrongly_decoded: 993
+not_decoded: 0
+  [OK] Ruta D-Wave Valida (E=-14.08): depot -> D13_loc -> D2_loc -> D11_loc -> D14_loc -> D7_loc -> D12_loc -> D10_loc -> depot (T=169.2)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 7
+  Vehiculo V_Own2: ruta completa.
+Entregas pendientes: 0 - []
+
+===== FIN DE LA SIMULACION Q4RPD =====
+Todas las entregas completadas!
+
+Log de Rutas Completadas:
+  Ruta 1: Vehiculo V_Own1 | ruta  depot -> D9_loc -> D3_loc -> D6_loc -> TP1_loc | TP1_loc -> D5_loc -> D8_loc -> D4_loc -> depot | total duration = 99.36612171072134 | capacity used = 252/285
+  Ruta 2: Vehiculo V_Own2 | ruta  depot -> D13_loc -> D2_loc -> D11_loc -> D14_loc -> D7_loc -> D12_loc -> D10_loc -> depot | total duration = 169.2367269708547 | capacity used = 275/280
+
+Generando graficos...
+  [draw] Imagen guardada: results_indiv\test\D14_P1\DWave-QPU\run_seed42_20260603_215946\imgs\Ruta_1.png
+  [draw] Imagen guardada: results_indiv\test\D14_P1\DWave-QPU\run_seed42_20260603_215946\imgs\Ruta_2.png
+
+Entregas completadas: 14/14
+
+Total cost (duration/distance):  268.60284868157606

@@ -1,0 +1,189 @@
+========================================================================
+Q4RPD - run reproducible
+  Fecha:           2026-05-27T07:13:34
+  Instancia:       D14_P2
+  Solver:          SA
+  Semilla:         46
+  omega2_factor:   0.3093952737211912
+  dynamic_omega:   False
+  generate_graphics: True
+  params_file:     autotune-results/individual_studies_first/q4rpd_D14_P2_00/best_params.json
+  [best_params aplicados]
+    base_penalty_factor: 1.7438901487702725
+    omega2_over_omega1: 0.3093952737211912
+    p_origin_penalty_w: 3.1776704698711806
+    p_delivery_once_w: 4.186877975357118
+    p_position_once_w: 7.489726390405288
+    p_dest_inclusion_w: 2.7240381528945705
+    p_consecutiveness_w: 1.2156996242012588
+    p_capacity_w: 3.001050294363889
+    reward_regular: 1.712200593492158
+    reward_tp_depot: 2.794954964014225
+    reward_depot_tp: 0.19433412872369388
+========================================================================
+--- INICIALIZACION DEL SISTEMA ---
+
+--- ITERACION Q4RPD 1 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+candidate node: D6_loc
+candidate node: D9_loc
+candidate node: D3_loc
+candidate node: D5_loc
+candidate node: D8_loc
+candidate node: D4_loc
+  SRP Definido: 8 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.3093952737211912)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [X] Ruta INVALIDA: depot -> D9_loc -> D3_loc -> D8_loc -> D6_loc -> D5_loc -> TP1_loc - ['Tiempo excedido: 57.9 > 50.0']
+    -> Fallo. Reintentando con parametros ajustados...
+Entregas pendientes: 14 - ['TP1', 'TP2', 'D3', 'D4', 'D5', '...']
+
+--- ITERACION Q4RPD 2 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+candidate node: D6_loc
+candidate node: D9_loc
+candidate node: D3_loc
+candidate node: D5_loc
+candidate node: D8_loc
+candidate node: D4_loc
+  SRP Definido: 8 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.3093952737211912)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [X] Ruta INVALIDA: depot -> D9_loc -> D3_loc -> D8_loc -> D6_loc -> D5_loc -> TP1_loc - ['Tiempo excedido: 57.9 > 50.0']
+    -> Fallo. Reintentando con parametros ajustados...
+Entregas pendientes: 14 - ['TP1', 'TP2', 'D3', 'D4', 'D5', '...']
+
+--- ITERACION Q4RPD 3 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+candidate node: D6_loc
+candidate node: D9_loc
+candidate node: D3_loc
+candidate node: D5_loc
+candidate node: D8_loc
+candidate node: D4_loc
+  SRP Definido: 8 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.3093952737211912)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [X] Ruta INVALIDA: depot -> D9_loc -> D3_loc -> D8_loc -> D6_loc -> D5_loc -> TP1_loc - ['Tiempo excedido: 57.9 > 50.0']
+    -> Fallo. Reintentando con parametros ajustados...
+Entregas pendientes: 14 - ['TP1', 'TP2', 'D3', 'D4', 'D5', '...']
+
+--- ITERACION Q4RPD 4 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+candidate node: D6_loc
+candidate node: D9_loc
+candidate node: D3_loc
+candidate node: D5_loc
+candidate node: D8_loc
+candidate node: D4_loc
+  SRP Definido: 8 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.3093952737211912)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [X] Ruta INVALIDA: depot -> D9_loc -> D5_loc -> D6_loc -> D3_loc -> D8_loc -> TP1_loc - ['Tiempo excedido: 60.7 > 50.0']
+    -> Fallo. Reintentando con parametros ajustados...
+Entregas pendientes: 14 - ['TP1', 'TP2', 'D3', 'D4', 'D5', '...']
+
+--- ITERACION Q4RPD 5 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+candidate node: D6_loc
+candidate node: D9_loc
+candidate node: D3_loc
+candidate node: D5_loc
+candidate node: D8_loc
+candidate node: D4_loc
+  SRP Definido: 8 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.3093952737211912)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [X] Ruta INVALIDA: depot -> D9_loc -> D3_loc -> D8_loc -> D6_loc -> D5_loc -> TP1_loc - ['Tiempo excedido: 57.9 > 50.0']
+    -> Fallo. Reintentando con parametros ajustados...
+Entregas pendientes: 14 - ['TP1', 'TP2', 'D3', 'D4', 'D5', '...']
+
+--- ITERACION Q4RPD 6 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+candidate node: D6_loc
+candidate node: D9_loc
+candidate node: D3_loc
+candidate node: D5_loc
+candidate node: D8_loc
+candidate node: D4_loc
+  SRP Definido: 8 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.3093952737211912)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [X] Ruta INVALIDA: depot -> D9_loc -> D3_loc -> D8_loc -> D6_loc -> D5_loc -> TP1_loc - ['Tiempo excedido: 57.9 > 50.0']
+    -> Fallo. Reintentando con parametros ajustados...
+Entregas pendientes: 14 - ['TP1', 'TP2', 'D3', 'D4', 'D5', '...']
+
+--- ITERACION Q4RPD 7 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+candidate node: D6_loc
+candidate node: D9_loc
+candidate node: D3_loc
+candidate node: D5_loc
+candidate node: D8_loc
+candidate node: D4_loc
+  SRP Definido: 8 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.3093952737211912)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [X] Ruta INVALIDA: depot -> D9_loc -> D3_loc -> D8_loc -> D6_loc -> D5_loc -> TP1_loc - ['Tiempo excedido: 57.9 > 50.0']
+    -> Fallo. Reintentando con parametros ajustados...
+Entregas pendientes: 14 - ['TP1', 'TP2', 'D3', 'D4', 'D5', '...']
+
+--- ITERACION Q4RPD 8 ---
+
+--- S1: CONFIGURACION DEL PROBLEMA DE ENRUTAMIENTO (SRP) ---
+Vehiculo seleccionado: V_Own1 en 'depot'
+  Tipo SRP: Depot-TP -> Destino: TP1
+candidate node: D6_loc
+candidate node: D9_loc
+candidate node: D3_loc
+candidate node: D5_loc
+candidate node: D8_loc
+candidate node: D4_loc
+  SRP Definido: 8 nodos, Max Dur: 50.0
+  Intento 1/1 (Sweeps=4200, Reads=228, w1=1.0, w2=0.3093952737211912)
+
+--- S2: SOLVER SIMULATED ANNEALING ---
+  [OK] Ruta Valida: depot -> D9_loc -> D3_loc -> D8_loc -> D6_loc -> TP1_loc (T=46.5)
+
+--- S3: ACTUALIZACION ---
+  Entregas servidas: 5
+Entregas pendientes: 9 - ['TP2', 'D4', 'D5', 'D7', 'D10', '...']
+
+===== FIN DE LA SIMULACION Q4RPD =====
+Se alcanzo el limite maximo de iteraciones.
+
+Log de Rutas Completadas:
+
+Generando graficos...
+
+Entregas completadas: 5/14
+
+Total cost (duration/distance):  0
